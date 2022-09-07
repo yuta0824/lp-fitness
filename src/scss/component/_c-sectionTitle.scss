@@ -1,0 +1,20 @@
+@use "../global" as g;
+
+.c-sectionTitle {
+  color: #333;
+  font-size: 20px;
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 5rem;
+    height: 4px;
+    background: g.$cr-m;
+  }
+}

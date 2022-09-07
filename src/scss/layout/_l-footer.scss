@@ -1,0 +1,13 @@
+@use "../global" as g;
+
+.l-footer {
+  padding: 10px 0;
+  background: #333;
+  color: #fff;
+}
+
+.l-footer__text {
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+}

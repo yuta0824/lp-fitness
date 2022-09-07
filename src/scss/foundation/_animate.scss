@@ -1,0 +1,105 @@
+// アニメーションの定義
+//--------------------------
+.anm {
+  opacity: 0;
+}
+
+.anm.is-animated {
+  animation: fadeIn 1.5s forwards;
+}
+
+.anm-up {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.anm-up.is-animated {
+  animation: fadeInUp 1.5s forwards;
+}
+
+.anm-down {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.anm-down.is-animated {
+  animation: fadeInDown 1.5s forwards;
+}
+
+.anm-left {
+  opacity: 0;
+  transform: translateX(60px);
+}
+
+.anm-left.is-animated {
+  animation: fadeInLeft 1.5s forwards;
+}
+
+.anm-right {
+  opacity: 0;
+  transform: translateX(-60px);
+}
+
+.anm-right.is-animated {
+  animation: fadeInRight 1.5s forwards;
+}
+
+.anm--late.is-animated {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* responsive
+==================================*/

@@ -1,0 +1,451 @@
+@use "./setting" as s;
+
+// メディアクエリー
+@mixin mq($breakpoint: md) {
+  @media #{map-get(s.$breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// ホバー
+@mixin hover() {
+  @media (hover: hover), screen and (min-width: 768px) {
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: s.$opacity;
+    }
+  }
+}
+
+// WordPressコンテンツ
+@mixin entry-content() {
+  p {
+    margin-top: 1.2em;
+    line-height: (22 / 14);
+    margin-bottom: 0.8em;
+  }
+
+  h1 {
+    margin-top: 1.2em;
+    margin-bottom: 0.8em;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-top: 1.8em;
+    margin-bottom: 1em;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-top: 1.8em;
+    margin-bottom: 1em;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 18px;
+    margin-top: 1.6em;
+    margin-bottom: 1em;
+    line-height: 1.6;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 16px;
+    margin-top: 1.6em;
+    margin-bottom: 1em;
+    line-height: 1.6;
+    font-weight: 700;
+  }
+
+  h6 {
+    font-size: 16px;
+    margin-top: 1.6em;
+    margin-bottom: 1em;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    + p {
+      margin-top: 0;
+    }
+  }
+
+  a {
+    color: g.$cr-m;
+    text-decoration: underline;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      opacity: g.$opacity;
+    }
+  }
+
+  hr {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    border-top: 2px dotted g.$cr-m;
+    border-bottom: none;
+
+    @include mq("md") {
+      margin-top: 46px;
+      margin-bottom: 46px;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    ul,
+    ol {
+      margin-bottom: 0;
+    }
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    ul,
+    ol {
+      margin-bottom: 0;
+    }
+  }
+
+  li {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    line-height: 1.6;
+  }
+
+  figure {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  blockquote {
+    background: #eee;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.6;
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  q {
+    background: #eee;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+  }
+
+  strong,
+  em,
+  b {
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  a {
+    text-decoration: underline;
+    transition: opacity 0.3s ease 0s;
+
+    &:hover {
+      opacity: g.$opacity;
+    }
+  }
+
+  iframe,
+  video,
+  img {
+    max-width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .wp-block-lazyblock-example-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @include mq("md") {
+      margin-top: 42px;
+      margin-bottom: 42px;
+    }
+  }
+
+  .wp-block-lazyblock-youtube {
+    margin-top: 14px;
+    margin-bottom: 14px;
+
+    @include mq("md") {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .wp-block-group {
+    border-radius: 12px;
+    background: #e7efef;
+    margin-top: 20px;
+    padding: 15px;
+
+    @include mq("md") {
+      margin-top: 40px;
+      padding: 32px 34px;
+    }
+  }
+}
+
+@mixin block() {
+  // 引用
+  .wp-block-quote {
+    > p {
+    }
+
+    > cite {
+    }
+  }
+
+  // 画像
+  .wp-block-image {
+    > img {
+    }
+
+    figcaption {
+      font-size: 13px;
+    }
+  }
+
+  .wp-block-group {
+  }
+
+  .wp-block-group__inner-container {
+    > :first-child {
+      margin-top: 0;
+    }
+  }
+
+  // ギャラリー
+  .wp-block-gallery {
+  }
+
+  .blocks-gallery-item {
+    > figure {
+      > img {
+      }
+
+      > figcaption {
+      }
+    }
+  }
+
+  // オーバーレイ
+  .wp-block-cover {
+  }
+
+  .wp-block-cover-text {
+  }
+
+  // ファイル
+  .wp-block-file {
+  }
+
+  .wp-block-file__button {
+  }
+
+  // 動画
+  .wp-block-video {
+    > video {
+    }
+
+    > figcaption {
+    }
+  }
+
+  // プルクオート
+  .wp-block-pullquote {
+    > blockquote {
+      > p {
+      }
+
+      > cite {
+      }
+    }
+  }
+
+  // ソースコード
+  .wp-block-code {
+    > code {
+    }
+  }
+
+  // 整形済み
+  .wp-block-preformatted {
+    > code {
+    }
+  }
+
+  // テーブル
+  .wp-block-table {
+    tr {
+    }
+
+    th,
+    td {
+    }
+
+    th {
+    }
+
+    td {
+    }
+  }
+
+  // 詩
+  .wp-block-verse {
+  }
+
+  // ボタン
+  .wp-block-button {
+  }
+
+  a.wp-block-button__link {
+    text-decoration: none;
+    margin: 1em 0;
+  }
+
+  // カラム
+  .wp-block-columns {
+  }
+
+  .wp-block-column {
+    > :first-child {
+      margin-top: 0;
+    }
+  }
+
+  // メディアと文章
+  .wp-block-media-text {
+  }
+
+  .wp-block-media-text__media {
+    > img {
+    }
+  }
+
+  .wp-block-media-text__content {
+  }
+
+  // カレンダー
+  .wp-block-calendar {
+    table {
+      caption {
+      }
+
+      tr {
+      }
+
+      th,
+      td {
+      }
+
+      th {
+      }
+
+      td {
+      }
+    }
+  }
+
+  // アーカイブ
+  .wp-block-archives {
+    li {
+      a {
+      }
+    }
+  }
+
+  .wp-block-categories {
+    li {
+      a {
+      }
+    }
+  }
+
+  .wp-block-latest-comments {
+  }
+
+  .wp-block-latest-comments__comment {
+    > img {
+    }
+  }
+
+  // 最新の記事
+  .wp-block-latest-posts {
+    li {
+      a {
+      }
+    }
+  }
+
+  // 検索
+  .wp-block-search {
+  }
+
+  .wp-block-search__label {
+  }
+
+  .wp-block-search__input {
+  }
+
+  .wp-block-search__button {
+  }
+
+  // タグクラウド
+  .wp-block-tag-cloud {
+    a {
+    }
+  }
+
+  // 埋め込み
+  .wp-block-embed {
+  }
+
+  // YouTube
+  .wp-block-embed-youtube {
+  }
+
+  .wp-block-embed__wrapper {
+    > iframe {
+    }
+  }
+
+  // オーディオ
+  .wp-audio-shortcode {
+  }
+}

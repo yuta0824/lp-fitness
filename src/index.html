@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>タイトル</title>
+	<meta name="description" content="ディスクリプション">
+	<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+	<header class="l-header js-header">
+		<div class="l-header__inner l-inner">
+			<h1 class="l-header__logo">
+				<a class="c-logo-header" href="/">
+					<img class="c-logo-header__img" src="/assets/img/logo.png" alt="ロゴ">
+				</a>
+			</h1>
+			<nav class="l-header__nav u-hidden-sp">
+				<ul class="p-global-nav">
+					<li class="p-global-nav__item"><a href="#">menu1</a></li>
+					<li class="p-global-nav__item"><a href="#">menu2</a></li>
+					<li class="p-global-nav__item"><a href="#">menu3</a></li>
+					<li class="p-global-nav__item"><a href="#">menu4</a></li>
+					<li class="p-global-nav__item"><a href="#">menu5</a></li>
+				</ul>
+			</nav>
+			<div class="l-header__hamburger js-btn-drawer u-hidden-pc">
+				<button class="c-btn-hamburger">
+					<span class="c-btn-hamburger__line c-btn-hamburger__line--top"></span>
+					<span class="c-btn-hamburger__line c-btn-hamburger__line--center"></span>
+					<span class="c-btn-hamburger__line c-btn-hamburger__line--bottom"></span>
+				</button><!-- c-drawer-button -->
+			</div>
+		</div>
+	</header><!-- l-header -->
+
+	<div class="p-drawer">
+		<div class="p-drawer__contents js-contents-drawer">
+			<ul class="p-drawer__items">
+				<li class="p-drawer__item"><a href="#" class="p-drawer__itemLink">menu1</a></li>
+				<li class="p-drawer__item"><a href="#" class="p-drawer__itemLink">menu2</a></li>
+				<li class="p-drawer__item"><a href="#" class="p-drawer__itemLink">menu3</a></li>
+				<li class="p-drawer__item"><a href="#" class="p-drawer__itemLink">menu4</a></li>
+				<li class="p-drawer__item"><a href="#" class="p-drawer__itemLink">menu5</a></li>
+				<div class="js-focus-trap" tabindex="0"></div>
+			</ul>
+		</div><!-- p-drawer-contents -->
+	</div>
+
+	<div class="l-section">
+		<div class="l-inner">
+			<h1 class="c-section-title">HelloWorld</h1>
+			<div class="" style="margin-top: 100px; text-align: center;">
+				<a href="/contact" class="c-btn c-btn--primary">お問い合わせボタン</a>
+			</div>
+		</div>
+	</div><!-- l-section -->
+
+	<footer class="l-footer">
+		<div class="l-inner">
+			<p class="l-footer__text">copyright2022</p>
+		</div>
+	</footer><!-- /.footer -->
+
+	<a class="c-btn-toTop js-top" href="#">^</a><!-- /.c-to-top -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

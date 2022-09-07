@@ -1,0 +1,84 @@
+// カラー
+//--------------------------
+$cr-m: #c2a174;
+$cr-a: #f7cb2a85;
+$cr-g: #9f9f9f85;
+$cr-bg: #fff;
+$cr-txt: #333;
+$cr-table: #ddd;
+
+// マウスホバー
+//--------------------------
+$opacity: 0.7;
+
+// 陰
+//--------------------------
+$shadow: 0px 0px 10px #00000029;
+
+// フォント
+//--------------------------
+$ff-ja: serif;
+$ff-en: sans-serif;
+$ff-code: monospace, sans-serif;
+$fz-base: 16px;
+$ff-base: $ff-ja;
+$fw-base: 400;
+$lh-base: 1.6;
+
+// レイアウトサイズ
+//--------------------------
+$layout-width-inner: 1200px;
+$breakpoint-size: (
+  "sm": 576,
+  "md": 768,
+  "lg": 1024,
+  "xl": 1280,
+);
+
+// ブレークポイント (SP基準)
+$breakpoints: (
+  sm: "(min-width: #{map-get($breakpoint-size,'sm')}px)",
+  md: "(min-width: #{map-get($breakpoint-size,'md')}px)",
+  lg: "(min-width: #{map-get($breakpoint-size,'lg')}px)",
+  xl: "(min-width: #{map-get($breakpoint-size,'xl')}px)",
+  "hover": "(hover: hover)",
+);
+// // ブレークポイント (PC基準)
+// $breakpoints: (
+//   sm: "(max-width: #{map.get($breakpoint-size,'sm') - 1}px)",
+//   md: "(max-width: #{map.get($breakpoint-size,'md') - 1}px)",
+//   lg: "(max-width: #{map.get($breakpoint-size,'lg') - 1}px)",
+//   xl: "(max-width: #{map.get($breakpoint-size,'xl') - 1}px)",
+//   "hover": "(hover: hover)",
+// );
+
+// ヘッダー高さ
+//--------------------------
+$header-height-sp: 80px;
+$header-height-pc: 105px;
+
+// 重なり順
+//--------------------------
+$layer: (
+  //ローディング
+    loading: 300,
+  //モーダル
+    modal: 100,
+  //ドロワー
+    drawer: 40,
+  //フローディング
+    floating: 30,
+  //ヘッダー
+    header: 20,
+  //フッター
+    footer: 10,
+  //基準
+    default: 1
+);
+
+// 余白
+//--------------------------
+$pd-pc: 55px; //PC
+$pd-tab: 55px; //Tab
+$pd-sp: 16px; //SP
+

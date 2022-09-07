@@ -1,0 +1,18 @@
+@use "../global" as g;
+
+.p-global-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-global-nav__item {
+  &:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
+
+.p-global-nav__item a {
+  padding: 3px 0;
+  transition: opacity 0.3s;
+  @include g.hover;
+}

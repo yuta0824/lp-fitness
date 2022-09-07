@@ -1,0 +1,51 @@
+@use "sass:math";
+@use "../global" as g;
+
+.c-btn-hamburger {
+  height: g.$drawer-menu-height;
+  width: g.$drawer-bar-width;
+  padding: 0;
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+}
+
+.c-btn-hamburger__line {
+  background: g.$drawer-bar-cr;
+  display: block;
+  height: g.$drawer-bar-height;
+  position: absolute;
+  transition: transform 0.3s;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.c-btn-hamburger__line--top {
+  top: 0;
+}
+
+.c-btn-hamburger__line--center {
+  top: g.$drawer-bar-space + g.$drawer-bar-height;
+}
+
+.c-btn-hamburger__line--bottom {
+  bottom: 0;
+}
+
+.is-open .c-btn-hamburger__line--top {
+  top: g.$drawer-bar-space + g.$drawer-bar-height;
+  transform: rotate(45deg);
+}
+
+.is-open .c-btn-hamburger__line--center {
+  transform: scaleX(0);
+  // display: none;
+}
+
+.is-open .c-btn-hamburger__line--bottom {
+  bottom: g.$drawer-bar-space + g.$drawer-bar-height;
+  transform: rotate(135deg);
+}

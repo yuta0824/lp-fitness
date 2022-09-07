@@ -1,0 +1,33 @@
+@use "../global" as g;
+
+.l-header {
+  height: g.$header-height-sp;
+  background: g.$cr-m;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: map-get(g.$layer, header);
+
+  @include g.mq("md") {
+    height: g.$header-height-pc;
+  }
+}
+
+.l-header__inner {
+  display: flex;
+  align-items: center;
+  height: 300px;
+}
+
+.l-header__logo {
+}
+
+.l-header__nav {
+  margin-left: auto;
+}
+
+.l-header__hamburger {
+  margin-left: auto;
+}

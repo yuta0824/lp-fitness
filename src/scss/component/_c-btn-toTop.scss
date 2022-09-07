@@ -1,0 +1,21 @@
+@use "../global" as g;
+
+.c-btn-toTop {
+  display: none;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: g.$cr-m;
+  position: fixed;
+  bottom: 30px;
+  font-size: 22px;
+  opacity: 0.6;
+  color: #fff;
+  right: 40px;
+  z-index: map-get(g.$layer, floating);
+
+  &.is-show {
+    display: block;
+  }
+}

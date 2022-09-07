@@ -1,0 +1,19 @@
+@use "../global" as g;
+
+// 非表示
+//--------------------------
+
+.u-hidden-pc {
+  // PC時に非表示
+  @include g.mq("md") {
+    display: none !important;
+  }
+}
+
+.u-hidden-sp {
+  // スマホ時に非表示
+  display: none;
+  @include g.mq("md") {
+    display: block;
+  }
+}

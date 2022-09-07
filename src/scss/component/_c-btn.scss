@@ -1,0 +1,15 @@
+@use "../global" as g;
+
+.c-btn {
+  display: inline-block;
+  padding: 1em 2em;
+  border: 1px solid g.$cr-m;
+  color: g.$cr-m;
+  border-radius: 10em;
+  width: 400px;
+  max-width: 100%;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+
+  @include g.hover;
+}

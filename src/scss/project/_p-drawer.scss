@@ -1,0 +1,49 @@
+@use "../global" as g;
+
+.p-drawer {
+  position: relative;
+  z-index: map-get(g.$layer, drawer);
+  
+  @include g.mq("md") {
+    display: none;
+  }
+}
+
+.p-drawer__contents {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  transform: translateY(g.$header-height-sp);
+  width: 100%;
+  height: calc(100vh - #{g.$header-height-sp});
+  min-height: 400px;
+  padding: 60px 0;
+  background: g.$drawer-content-bg;
+
+  @include g.mq("md") {
+    transform: translateY(g.$header-height-pc);
+    height: calc(100vh - #{g.$header-height-pc});
+  }
+}
+
+.p-drawer__items {
+  width: 70%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.p-drawer__item {
+  &:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
+.p-drawer__itemLink {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 1px solid #888;
+  padding: 10px 0;
+}
