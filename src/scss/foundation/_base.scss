@@ -5,33 +5,37 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html.is-fixed,
 html.is-fixed body {
-	overflow: hidden;
+  overflow: hidden;
+
+  @include g.mq("md") {
+    overflow: auto;
+  }
 }
 
 body {
-	font-size: g.$fz-base;
-	font-family: g.$ff-base;
-	font-weight: g.$fw-base;
-	color: g.$cr-txt;
-	line-height: g.$lh-base;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background: g.$cr-bg;
-	overflow-x: hidden;
-	overflow-wrap: break-word;
-	min-height: 100vh;
-	min-height: -webkit-fill-available;
+  font-size: g.$fz-base;
+  font-family: g.$ff-base;
+  font-weight: g.$fw-base;
+  color: g.$cr-txt;
+  line-height: g.$lh-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: g.$cr-bg;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 article,
@@ -41,7 +45,7 @@ header,
 nav,
 section,
 main {
-	display: block;
+  display: block;
 }
 
 h1,
@@ -107,71 +111,71 @@ thead,
 tr,
 th,
 td {
-	margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
-	border: none;
-	vertical-align: top;
-	image-rendering: -webkit-optimize-contrast;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: top;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 video {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 code,
 kbd,
 pre,
 samp {
-	font-family: g.$ff-code;
-	font-size: inherit;
+  font-family: g.$ff-code;
+  font-size: inherit;
 }
 
 ul,
 ol {
-	list-style: none;
+  list-style: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	width: 100%;
-	table-layout: auto;
-	border: 1px solid g.$cr-table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  table-layout: auto;
+  border: 1px solid g.$cr-table;
 }
 
 th,
 td {
-	padding: 4px 6px;
-	text-align: left;
-	vertical-align: top;
-	border: 1px solid g.$cr-table;
+  padding: 4px 6px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid g.$cr-table;
 }
 
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 
 blockquote::after,
 blockquote::before,
 q::after,
 q::before {
-	content: "";
-	content: none;
+  content: "";
+  content: none;
 }
 
 address {
-	font-style: normal;
+  font-style: normal;
 }
