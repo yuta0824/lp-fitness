@@ -1,9 +1,6 @@
 const gulp = require("gulp");
 const del = require("del");
 
-//ローカルドメイン
-const localDomain = "http://localhost.local/";
-
 //scss
 const sass = require("gulp-dart-sass");
 const plumber = require("gulp-plumber");
@@ -23,14 +20,13 @@ const imageminPngquant = require("imagemin-pngquant");
 // 入出力するフォルダを指定
 const srcBase = "../src";
 const srcAssetsBase = "../src/assets";
-const distBase = "../dist";
-const distAssetsBase = "../dist/assets";
+const distBase = "../fitness";
+const distAssetsBase = "../fitness/assets";
 
 const srcPath = {
   scss: srcBase + "/scss/**/*.scss",
   js: srcAssetsBase + "/js/**/*.js",
   img: [srcAssetsBase + "/img/**/*", "!" + srcAssetsBase + "/img/svg/*.svg"],
-  font: srcAssetsBase + "/font/**/*",
   html: srcBase + "/**/*.html",
   php: srcBase + "/**/*.php",
   library: srcAssetsBase + "/library/**/*",
@@ -40,7 +36,6 @@ const distPath = {
   css: distAssetsBase + "/css/",
   js: distAssetsBase + "/js/",
   img: distAssetsBase + "/img/",
-  font: distAssetsBase + "/font/",
   html: distBase + "/",
   php: distBase + "/",
   library: distAssetsBase + "/library/",
@@ -57,7 +52,6 @@ const clean = () => {
 
 /**
  * sass
- *
  */
 const cssSass = () => {
   return gulp
@@ -100,9 +94,6 @@ const js = () => {
 const php = () => {
   return gulp.src(srcPath.php).pipe(gulp.dest(distPath.php));
 };
-const font = () => {
-  return gulp.src(srcPath.font).pipe(gulp.dest(distPath.font));
-};
 const library = () => {
   return gulp.src(srcPath.library).pipe(gulp.dest(distPath.library));
 };
@@ -114,11 +105,7 @@ const browserSyncFunc = () => {
   browserSync.init(browserSyncOption);
 };
 const browserSyncOption = {
-  //静的サイト
   server: distBase,
-  //動的サイト
-  // proxy: localDomain,
-  // open: true,
 };
 
 /**
@@ -147,6 +134,6 @@ const watchFiles = () => {
  */
 exports.default = gulp.series(
   clean,
-  gulp.parallel(html, cssSass, js, imgImagemin, php, font, library),
+  gulp.parallel(html, cssSass, js, imgImagemin, php, library),
   gulp.parallel(watchFiles, browserSyncFunc)
 );
