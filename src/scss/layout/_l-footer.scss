@@ -1,13 +1,80 @@
 @use "../global" as g;
 
 .l-footer {
-  padding: 10px 0;
-  background: #333;
-  color: #fff;
+  padding: 34px 0 46px;
+  background: g.$cr-gray;
+  color: g.$cr-txt;
+
+  @include g.mq("md") {
+    height: 48px 0 40px;
+  }
+}
+
+.l-footer__top {
+  @include g.mq("md") {
+    display: flex;
+  }
+}
+
+.l-footer__logo {
+  text-align: center;
+  @include g.mq("md") {
+    flex-shrink: 0;
+    margin-top: 10px;
+  }
+}
+
+.l-footer__links {
+  margin-top: 23px;
+
+  @include g.mq("md") {
+    margin-top: 0;
+    margin-left: auto;
+    padding-left: 30px;
+  }
+}
+
+.l-footer__bottom {
+  @include g.mq("md") {
+    margin-top: 58px;
+    display: flex;
+  }
 }
 
 .l-footer__text {
-  margin-top: 10px;
+  font-size: 12px;
+  margin-top: 30px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+
+  @include g.mq("md") {
+    margin-top: 0;
+    padding-left: 0;
+    letter-spacing: 0.1em;
+    padding-right: 40px;
+  }
+}
+
+.l-footer__copy {
+  font-family: g.$ff-en;
+  font-size: 12px;
+  margin-top: 38px;
+  padding-left: 20px;
+  letter-spacing: 0.1em;
   text-align: center;
-  color: #fff;
+
+  @include g.mq("md") {
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+
+.l-footer__sns {
+  margin-top: 12px;
+  justify-content: center;
+
+  @include g.mq("md") {
+    margin-top: 15px;
+    justify-content: right;
+  }
 }

@@ -1,0 +1,39 @@
+@use '../global' as g;
+
+.p-nav-footer {
+  @include g.mq("md") {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+}
+
+.p-nav-footer__item {
+  &:not(:first-child) {
+    @include g.mq("md") {
+      margin-left: 32px;
+    }
+  }
+}
+
+.p-nav-footer__itemLink {
+	font-family: g.$ff-en;
+  font-size: 16px;
+  padding: 12px 0;
+  line-height: 1.48;
+  width: 100%;
+	letter-spacing: 0.1em;
+  display: inline-block;
+  text-align: center;
+  transition: color 0.3s;
+
+	@include g.mq("md") {
+		font-size: 14px;
+	}
+
+  @include g.mq("hover") {
+    &:hover {
+      color: g.$cr-m;
+    }
+  }
+}
