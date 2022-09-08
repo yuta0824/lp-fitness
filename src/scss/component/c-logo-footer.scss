@@ -1,0 +1,10 @@
+@use '../global' as g;
+
+.c-logo-footer {
+  width: 76px;
+	display: inline-block;
+
+  @include g.mq("md") {
+    width: 130px;
+  }
+}

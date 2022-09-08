@@ -1,18 +1,18 @@
 @use "../global" as g;
 
-.p-global-nav {
+.p-nav-global {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.p-global-nav__item {
+.p-nav-global__item {
   &:not(:first-child) {
     margin-left: 20px;
   }
 }
 
-.p-global-nav__item a {
+.p-nav-global__item a {
   padding: 17px 0;
   font-size: 15px;
   letter-spacing: 0em;
@@ -23,6 +23,8 @@
   }
 
   @include g.mq("hover") {
-    color: g.$cr-m;
+    &:hover {
+      color: g.$cr-m;
+    }
   }
 }

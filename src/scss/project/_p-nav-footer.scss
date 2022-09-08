@@ -1,0 +1,33 @@
+@use '../global' as g;
+
+.p-nav-footer {
+  @include g.mq("md") {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+}
+
+.p-nav-footer__item {
+  &:not(:first-child) {
+    @include g.mq("md") {
+      margin-left: 32px;
+    }
+  }
+}
+
+.p-nav-footer__itemLink {
+  font-size: 14px;
+  padding: 12px 0;
+  line-height: 1.5;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  transition: color 0.3s;
+
+  @include g.mq("hover") {
+    &:hover {
+      color: g.$cr-m;
+    }
+  }
+}
