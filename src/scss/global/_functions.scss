@@ -2,10 +2,10 @@
 
 // vw計算
 @function vw($windows_width, $font_size) {
-  @return $font_size / $windows_width * 100vw;
+  @return calc($font_size / $windows_width) * 100vw;
 }
 
 // letter-spacing計算
 @function lsp($letter_spacing, $font_size) {
-  @return $letter_spacing / $font_size * 1em;
+  @return calc($letter_spacing / $font_size) * 1em;
 }

@@ -1,9 +1,14 @@
-@use '../global' as *;
+@use '../global' as g;
 
 .c-logo-header {
+  width: 76px;
+
+  @include g.mq("md") {
+    width: 130px;
+  }
 }
 
 .c-logo-header__img {
-  width: 200px;
   display: block;
+  width: 100%;
 }
