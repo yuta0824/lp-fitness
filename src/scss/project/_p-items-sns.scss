@@ -1,0 +1,10 @@
+.p-items-sns {
+  display: flex;
+  align-items: center;
+}
+
+.p-items-sns__icon {
+  &:not(:first-child) {
+    margin-left: 9px;
+  }
+}

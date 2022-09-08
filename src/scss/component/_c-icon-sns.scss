@@ -1,0 +1,12 @@
+@use '../global' as g;
+
+.c-icon-sns {
+  display: inline-block;
+  padding: 8px;
+  @include g.hover;
+
+  img {
+    width: 38.4px;
+		display: block;
+  }
+}
