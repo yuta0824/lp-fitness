@@ -14,32 +14,39 @@
 
 <body>
 	<header class="l-header js-header">
-		<div class="l-header__inner l-inner">
-			<h1 class="l-header__logo">
-				<a class="c-logo-header" href="/">
-					<img class="c-logo-header__img" src="/assets/img/logo.png" alt="ロゴ">
-				</a>
-			</h1>
-			<nav class="l-header__nav u-hidden-sp">
+		<div class="l-header__inner">
+			<nav class="l-header__left">
 				<ul class="p-global-nav">
-					<li class="p-global-nav__item"><a href="#">menu1</a></li>
-					<li class="p-global-nav__item"><a href="#">menu2</a></li>
-					<li class="p-global-nav__item"><a href="#">menu3</a></li>
-					<li class="p-global-nav__item"><a href="#">menu4</a></li>
-					<li class="p-global-nav__item"><a href="#">menu5</a></li>
+					<li class="p-global-nav__item"><a href="#">OWNER’S PROFILE</a></li>
+					<li class="p-global-nav__item"><a href="#">FEATURE</a></li>
+					<li class="p-global-nav__item"><a href="#">MEMBER’S VOICE</a></li>
 				</ul>
 			</nav>
-			<div class="l-header__hamburger js-btn-drawer u-hidden-pc">
-				<button class="c-btn-hamburger">
-					<span class="c-btn-hamburger__line c-btn-hamburger__line--top"></span>
-					<span class="c-btn-hamburger__line c-btn-hamburger__line--center"></span>
-					<span class="c-btn-hamburger__line c-btn-hamburger__line--bottom"></span>
-				</button><!-- c-drawer-button -->
-			</div>
+			<h1 class="l-header__logo">
+				<a class="c-logo-header" href="#"><img src="../assets/img/logo.png" alt="MELIA FITNESS"></a>
+			</h1>
+			<nav class="l-header__right">
+				<div class="l-header__gnav-right">
+					<ul class="p-global-nav">
+						<li class="p-global-nav__item"><a href="#">PRICE</a></li>
+						<li class="p-global-nav__item"><a href="#">Q&A</a></li>
+						<li class="p-global-nav__item"><a href="#">ACCESS</a></li>
+					</ul>
+				</div>
+				<div class="l-header__btnWrap">
+					<a href="" class="c-btn-line"><span>LINE予約</span></a>
+					<button class="l-header__hamburger c-btn-hamburger js-btn-drawer">
+						<span class="c-btn-hamburger__line c-btn-hamburger__line--top"></span>
+						<span class="c-btn-hamburger__line c-btn-hamburger__line--center"></span>
+						<span class="c-btn-hamburger__line c-btn-hamburger__line--bottom"></span>
+					</button>
+				</div>
+			</nav>
 		</div>
-	</header><!-- l-header -->
+	</header>
 
 	<div class="p-drawer">
+		<div class="p-drawer__bg"></div>
 		<div class="p-drawer__contents js-contents-drawer">
 			<ul class="p-drawer__items">
 				<li class="p-drawer__item"><a href="#" class="p-drawer__itemLink">menu1</a></li>
@@ -49,46 +56,22 @@
 				<li class="p-drawer__item"><a href="#" class="p-drawer__itemLink">menu5</a></li>
 				<div class="js-focus-trap" tabindex="0"></div>
 			</ul>
+			<div class="p-drawer__sns p-items-sns">
+				<a href="#" class="p-items-sns__icon c-icon-sns"><img src="../assets/img/icon-youtube.png" alt="youtube" width="38.4" height="38.4" loading="lazy"></a>
+				<a href="#" class="p-items-sns__icon c-icon-sns"><img src="../assets/img/icon-twitter.png" alt="youtube" width="38.4" height="38.4" loading="lazy"></a>
+				<a href="#" class="p-items-sns__icon c-icon-sns"><img src="../assets/img/icon-instagram.png" alt="youtube" width="38.4" height="38.4" loading="lazy"></a>
+			</div>
 		</div><!-- p-drawer-contents -->
 	</div>
 
 	<div class="l-section">
 		<div class="l-inner">
-			<h1 class="c-section-title">HelloWorld</h1>
-			<div class="" style="margin-top: 100px; text-align: center;">
-				<a href="/contact" class="c-btn c-btn--primary">お問い合わせボタン</a>
+			<div class="c-sectionTitle--center">
+				<h2 class="c-sectionTitle__en">PARTS CATALOG</h2>
+				<span class="c-sectionTitle__ja">パーツカタログ</span>
 			</div>
-		</div>
-	</div><!-- l-section -->
-	<div class="l-section">
-		<div class="l-inner">
-			<h1 class="c-section-title">HelloWorld</h1>
 			<div class="" style="margin-top: 100px; text-align: center;">
-				<a href="/contact" class="c-btn c-btn--primary">お問い合わせボタン</a>
-			</div>
-		</div>
-	</div><!-- l-section -->
-	<div class="l-section">
-		<div class="l-inner">
-			<h1 class="c-section-title">HelloWorld</h1>
-			<div class="" style="margin-top: 100px; text-align: center;">
-				<a href="/contact" class="c-btn c-btn--primary">お問い合わせボタン</a>
-			</div>
-		</div>
-	</div><!-- l-section -->
-	<div class="l-section">
-		<div class="l-inner">
-			<h1 class="c-section-title">HelloWorld</h1>
-			<div class="" style="margin-top: 100px; text-align: center;">
-				<a href="/contact" class="c-btn c-btn--primary">お問い合わせボタン</a>
-			</div>
-		</div>
-	</div><!-- l-section -->
-	<div class="l-section">
-		<div class="l-inner">
-			<h1 class="c-section-title">HelloWorld</h1>
-			<div class="" style="margin-top: 100px; text-align: center;">
-				<a href="/contact" class="c-btn c-btn--primary">お問い合わせボタン</a>
+				<a href="/parts-catalog" class="c-btn-line--wide">カタログページ</a>
 			</div>
 		</div>
 	</div><!-- l-section -->
@@ -98,8 +81,6 @@
 			<p class="l-footer__text">copyright2022</p>
 		</div>
 	</footer><!-- /.footer -->
-
-	<a class="c-btn-toTop js-top" href="#">TO<br>TOP</a><!-- /.c-to-top -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="./assets/js/script.js"></script>

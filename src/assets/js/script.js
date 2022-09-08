@@ -91,7 +91,7 @@ jQuery("a[href^=\"#\"]").click(function () {
 // ハンバーガーメニュー
 jQuery(".js-btn-drawer").click(function () {
 	jQuery(".js-btn-drawer").toggleClass("is-open");
-	jQuery(".js-contents-drawer").fadeToggle();
+	jQuery(".js-contents-drawer, .p-drawer__bg").toggleClass("is-open");
 	jQuery("html").toggleClass("is-fixed");
 });
 jQuery(".js-contents-drawer li a").click(function () {

@@ -3,7 +3,7 @@
 .c-btn-line--base {
   display: inline-block;
   text-align: center;
-  background: linear-gradient(to right, #8b6c3a, #b19464, #8b6c3a);
+  background: linear-gradient(to right, #8b6c3a, #b19464 40%, #8b6c3a);
   max-width: 100%;
   border-radius: 2px;
   color: g.$cr-white;
@@ -15,11 +15,12 @@
 .c-btn-line {
   @extend .c-btn-line--base;
   font-size: 14px;
-  padding: 12px 28px;
+  padding: 12px 27px;
   letter-spacing: 0.2em;
 
   @include g.mq("md") {
-    padding: 18px 40px;
+    padding: 18px 20px;
+		width: 169px;
     font-size: 16px;
   }
 }
