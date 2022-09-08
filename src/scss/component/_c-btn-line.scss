@@ -15,7 +15,7 @@
 .c-btn-line {
   @extend .c-btn-line--base;
   font-size: 14px;
-  padding: 12px 28px;
+  padding: 12px 27px;
   letter-spacing: 0.2em;
 
   @include g.mq("md") {
