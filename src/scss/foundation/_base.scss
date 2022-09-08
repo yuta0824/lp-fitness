@@ -18,7 +18,7 @@ html.is-fixed,
 html.is-fixed body {
   overflow: hidden;
 
-  @include g.mq("md") {
+  @include g.mq("lg") {
     overflow: auto;
   }
 }

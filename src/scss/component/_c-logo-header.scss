@@ -3,7 +3,8 @@
 .c-logo-header {
   display: block;
   width: 76px;
-	padding-top: 1px;
+  padding-top: 1px;
+  @include g.hover;
 
   @include g.mq("md") {
     width: 130px;
