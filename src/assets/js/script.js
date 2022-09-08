@@ -34,7 +34,7 @@ jQuery(window).on("scroll", function () {
 jQuery.fn.acs = function (options) {
 	const elements = this;
 	const defaults = {
-		screenPos: 0.8,
+		screenPos: 0.9,
 		className: "is-animated",
 	};
 	const setting = jQuery.extend(defaults, options);
@@ -52,7 +52,7 @@ jQuery.fn.acs = function (options) {
 		}
 	}
 };
-jQuery('.anm, [class*="anm-"], .anm-list > *').each(function () {
+jQuery('.anm, [class*="anm-"]').each(function () {
 	jQuery(this).acs();
 });
 jQuery.fn.anmDelay = function (options) {
@@ -66,9 +66,6 @@ jQuery.fn.anmDelay = function (options) {
 	const time = index * setting.delay;
 	elements.css(setting.property, time + "s");
 };
-jQuery(".anm-list > *").each(function () {
-	jQuery(this).anmDelay();
-});
 
 // スムーススクロール
 jQuery("a[href^=\"#\"]").click(function () {

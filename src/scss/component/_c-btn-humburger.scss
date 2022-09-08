@@ -5,6 +5,7 @@
   height: g.$drawer-menu-height;
   width: g.$drawer-bar-width;
   padding: 0;
+  border: none;
   background-color: transparent;
   display: inline-block;
   position: relative;
@@ -29,23 +30,26 @@
 
 .c-btn-hamburger__line--center {
   top: g.$drawer-bar-space + g.$drawer-bar-height;
+  width: 22px;
 }
 
 .c-btn-hamburger__line--bottom {
   bottom: 0;
+  width: 15px;
 }
 
 .is-open .c-btn-hamburger__line--top {
   top: g.$drawer-bar-space + g.$drawer-bar-height;
   transform: rotate(45deg);
+  width: g.$drawer-bar-width;
 }
 
 .is-open .c-btn-hamburger__line--center {
   transform: scaleX(0);
-  // display: none;
 }
 
 .is-open .c-btn-hamburger__line--bottom {
   bottom: g.$drawer-bar-space + g.$drawer-bar-height;
   transform: rotate(135deg);
+  width: g.$drawer-bar-width;
 }

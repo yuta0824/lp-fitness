@@ -4,18 +4,21 @@
   display: none;
   width: 60px;
   height: 60px;
-  line-height: 60px;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background: g.$cr-m;
   position: fixed;
   bottom: 30px;
-  font-size: 22px;
+  font-size: 16px;
   opacity: 0.6;
   color: #fff;
   right: 40px;
   z-index: map-get(g.$layer, floating);
 
   &.is-show {
-    display: block;
+    display: flex;
   }
 }
