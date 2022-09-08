@@ -1,9 +1,13 @@
-@use '../global' as *;
+@use '../global' as g;
 
 .c-logo-header {
 }
 
 .c-logo-header__img {
-  width: 200px;
+  width: 76px;
   display: block;
+
+  @include g.mq("md") {
+    width: 130px;
+  }
 }
