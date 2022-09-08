@@ -9,7 +9,6 @@
   color: g.$cr-white;
   font-weight: 600;
   line-height: 1;
-
   @include g.hover;
 }
 
@@ -19,14 +18,35 @@
   padding: 12px 28px;
   letter-spacing: 0.2em;
 
-	@include g.mq("md") {
-		padding: 18px 40px;
-		font-size: 16px;
-	}
+  @include g.mq("md") {
+    padding: 18px 40px;
+    font-size: 16px;
+  }
 }
 
 .c-btn-line--wide {
   @extend .c-btn-line--base;
   box-shadow: 0 2px 5px 0 rgba($color: #000000, $alpha: 0.16);
+  width: 295px;
+  font-size: 16px;
+  padding: 20px 33px;
+  letter-spacing: 0.05em;
 
+  @include g.mq("md") {
+    width: 600px;
+    font-size: 28px;
+    padding: 27px 37px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 37px;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 29px;
+      background: transparent url(../img/icon-right.png) no-repeat center center / contain;
+    }
+  }
 }
