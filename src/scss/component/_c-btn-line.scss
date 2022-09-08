@@ -19,7 +19,8 @@
   letter-spacing: 0.2em;
 
   @include g.mq("md") {
-    padding: 18px 40px;
+    padding: 18px 20px;
+		width: 169px;
     font-size: 16px;
   }
 }

@@ -2,17 +2,18 @@
 
 .p-global-nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .p-global-nav__item {
   &:not(:first-child) {
-    margin-left: 2rem;
+    margin-left: 20px;
   }
 }
 
 .p-global-nav__item a {
-  padding: 3px 0;
-  transition: opacity 0.3s;
+  font-size: 15px;
+  letter-spacing: 0.01em;
   @include g.hover;
 }

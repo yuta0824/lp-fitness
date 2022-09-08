@@ -17,3 +17,11 @@
     display: block;
   }
 }
+
+.u-hidden-sp--flex {
+  // スマホ時に非表示
+  display: none;
+  @include g.mq("md") {
+    display: flex;
+  }
+}
