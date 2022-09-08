@@ -4,11 +4,21 @@
 .c-btn-hamburger {
   height: g.$drawer-menu-height;
   width: g.$drawer-bar-width;
-  padding: 0;
   border: none;
   background-color: transparent;
   display: inline-block;
   position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 25px);
+    height: calc(100% + 30px);
+  }
 }
 
 .c-btn-hamburger__line {
