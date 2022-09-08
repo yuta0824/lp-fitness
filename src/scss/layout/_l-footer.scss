@@ -1,7 +1,7 @@
 @use "../global" as g;
 
 .l-footer {
-  padding: 32px 0 46px;
+  padding: 34px 0 46px;
   background: g.$cr-gray;
   color: g.$cr-txt;
 
@@ -24,7 +24,7 @@
 }
 
 .l-footer__links {
-  margin-top: 20px;
+  margin-top: 23px;
 
   @include g.mq("md") {
     margin-top: 0;
@@ -42,8 +42,9 @@
 
 .l-footer__text {
   font-size: 12px;
-  margin-top: 40px;
+  margin-top: 30px;
   line-height: 1.5;
+	letter-spacing: 0.01em;
 
   @include g.mq("md") {
     margin-top: 0;
@@ -51,8 +52,11 @@
 }
 
 .l-footer__copy {
+	font-family: g.$ff-en;
   font-size: 12px;
-  margin-top: 20px;
+  margin-top: 38px;
+	padding-left:20px;
+	letter-spacing: 0.1em;
   text-align: center;
 
   @include g.mq("md") {
@@ -62,7 +66,7 @@
 }
 
 .l-footer__sns {
-  margin-top: 20px;
+  margin-top: 12px;
   justify-content: center;
 
   @include g.mq("md") {

@@ -17,10 +17,12 @@
 }
 
 .p-nav-footer__itemLink {
-  font-size: 14px;
+	font-family: g.$ff-en;
+  font-size: 16px;
   padding: 12px 0;
-  line-height: 1.5;
+  line-height: 1.48;
   width: 100%;
+	letter-spacing: 0.1em;
   display: inline-block;
   text-align: center;
   transition: color 0.3s;
