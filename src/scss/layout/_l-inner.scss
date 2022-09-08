@@ -6,6 +6,7 @@
   padding-left: g.$pd-sp;
   padding-right: g.$pd-sp;
   width: 100%;
+  max-width: 600px;
 
   @include g.mq("md") {
     padding-left: g.$pd-pc;

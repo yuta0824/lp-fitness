@@ -2,8 +2,7 @@
 
 .l-header {
   height: g.$header-height-sp;
-  background: g.$cr-m;
-  color: #fff;
+  background: g.$cr-white;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,18 +15,37 @@
 }
 
 .l-header__inner {
+  height: inherit;
+  margin: 0 auto;
+  padding-left: g.$pd-sp;
+  padding-right: g.$pd-sp;
+  width: 100%;
+  max-width: 600px;
   display: flex;
   align-items: center;
-  height: 300px;
+
+  @include g.mq("md") {
+    padding-left: g.$pd-pc;
+    padding-right: g.$pd-pc;
+    max-width: g.$layout-width-inner + g.$pd-pc * 2;
+  }
+}
+
+.l-header__gnav1 {
 }
 
 .l-header__logo {
 }
 
-.l-header__nav {
+.l-header__gnav2 {
   margin-left: auto;
+  display: flex;
+}
+
+
+.l-header__line {
 }
 
 .l-header__hamburger {
-  margin-left: auto;
+  margin-left: 21px;
 }
