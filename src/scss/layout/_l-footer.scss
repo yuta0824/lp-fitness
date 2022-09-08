@@ -17,9 +17,10 @@
 }
 
 .l-footer__logo {
-	text-align: center;
+  text-align: center;
   @include g.mq("md") {
     flex-shrink: 0;
+    margin-top: 10px;
   }
 }
 
@@ -35,7 +36,7 @@
 
 .l-footer__bottom {
   @include g.mq("md") {
-    margin-top: 40px;
+    margin-top: 58px;
     display: flex;
   }
 }
@@ -44,19 +45,22 @@
   font-size: 12px;
   margin-top: 30px;
   line-height: 1.5;
-	letter-spacing: 0.01em;
+  letter-spacing: 0.01em;
 
   @include g.mq("md") {
     margin-top: 0;
+    padding-left: 0;
+    letter-spacing: 0.1em;
+    padding-right: 40px;
   }
 }
 
 .l-footer__copy {
-	font-family: g.$ff-en;
+  font-family: g.$ff-en;
   font-size: 12px;
   margin-top: 38px;
-	padding-left:20px;
-	letter-spacing: 0.1em;
+  padding-left: 20px;
+  letter-spacing: 0.1em;
   text-align: center;
 
   @include g.mq("md") {
@@ -70,6 +74,7 @@
   justify-content: center;
 
   @include g.mq("md") {
+    margin-top: 15px;
     justify-content: right;
   }
 }
