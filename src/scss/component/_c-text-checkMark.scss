@@ -1,0 +1,24 @@
+@use '../global' as g;
+
+.c-text-checkMark {
+  padding-left: 24px + 8px;
+  text-indent: -24px + -8px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  @include g.mq("md") {
+    font-size: 18px;
+		letter-spacing: 0.05em;
+  }
+
+  > img {
+    margin-right: 8px;
+    width: 24px;
+    vertical-align: bottom;
+    display: inline-block;
+
+		@include g.mq("md") {
+			vertical-align: top;
+		}
+  }
+}
