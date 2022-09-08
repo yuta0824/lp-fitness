@@ -13,7 +13,12 @@
 }
 
 .p-global-nav__item a {
-  font-size: 15px;
+  padding: 17px 0;
+	font-size: 15px;
   letter-spacing: 0.01em;
-  @include g.hover;
+  transition: color 0.3s;
+
+  @include g.mq("hover") {
+    color: g.$cr-m;
+  }
 }

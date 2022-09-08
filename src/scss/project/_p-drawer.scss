@@ -3,7 +3,7 @@
 .p-drawer {
   position: relative;
   z-index: map-get(g.$layer, drawer);
-  
+
   @include g.mq("md") {
     display: none;
   }
