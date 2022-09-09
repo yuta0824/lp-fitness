@@ -7,20 +7,21 @@
   font-size: 20px;
   text-align: center;
   color: g.$cr-m;
-	line-height: 1.5;
-	letter-spacing: 0.05em;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
 
   @include g.mq("md") {
     font-size: 32px;
+    letter-spacing: 0.1em;
   }
 }
 
 .p-message__items {
-  margin-top: 36px;
+  margin-top: 78px;
 }
 
 .p-message__item {
   &:not(:first-child) {
-    margin-top: 40px;
+    margin-top: 79px;
   }
 }
