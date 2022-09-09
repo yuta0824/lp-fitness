@@ -29,7 +29,7 @@
   font-size: g.vw(375, 22);
   font-weight: 600;
   letter-spacing: 0.1em;
-  line-height: 1.6;
+  line-height: 1.65;
   text-align: center;
 
   @include g.mq("md") {
@@ -37,6 +37,7 @@
     text-align: left;
   }
 }
+
 .p-mv__title--large {
   @include g.mq("md") {
     font-size: g.vw(1440, 40);
@@ -44,9 +45,10 @@
   }
 }
 .p-mv__subTitle {
+
   font-size: g.vw(375, 14);
   font-weight: 600;
-  letter-spacing: 0.1em;
+  // letter-spacing: 0;
   line-height: 1.5;
   margin-top: g.vw(375, 12);
   text-align: center;
