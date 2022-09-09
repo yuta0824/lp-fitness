@@ -1,0 +1,20 @@
+@use '../global' as g;
+
+.p-message {
+}
+
+.p-message__title {
+  font-size: 20px;
+  text-align: center;
+  color: g.$cr-m;
+}
+
+.p-message__items {
+  margin-top: 40px;
+}
+
+.p-message__item {
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+}

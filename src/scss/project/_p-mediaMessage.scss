@@ -1,0 +1,31 @@
+@use '../global' as g;
+
+.p-mediaMessage {
+}
+
+.p-mediaMessage__img {
+	img {
+		width: 100%;
+	}
+}
+
+.p-mediaMessage__body {
+	margin-top: 20px;
+}
+
+.p-mediaMessage__head {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.p-mediaMessage__textWrap {
+  margin-top: 20px;
+}
+
+.p-mediaMessage__text {
+}
+
+.p-mediaMessage__name {
+  margin-top: 10px;
+  font-size: 14px;
+}
