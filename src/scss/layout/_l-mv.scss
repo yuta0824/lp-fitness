@@ -1,0 +1,9 @@
+@use '../global' as g;
+
+.l-mv {
+	margin-top: g.$header-height-sp;
+
+	@include g.mq("md") {
+		margin-top: g.$header-height-pc;
+	}
+}

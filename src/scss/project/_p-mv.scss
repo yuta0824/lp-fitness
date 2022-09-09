@@ -1,0 +1,32 @@
+@use '../global' as g;
+
+.p-mv {
+  width: 100%;
+  height: g.vw(375, 602);
+  padding-top: g.vw(375, 39);
+  background: transparent url(../img/bg_top_sp.jpg) no-repeat center center /
+    cover;
+
+  @include g.mq("md") {
+    background: transparent url(../img/bg_top_pc.jpg) no-repeat center center /
+      cover;
+    height: 681px;
+  }
+}
+
+.p-mv__title {
+  font-size: g.vw(375, 22);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.p-mv__subTitle {
+  font-size: g.vw(375, 14);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  margin-top: g.vw(375, 12);
+  text-align: center;
+}
