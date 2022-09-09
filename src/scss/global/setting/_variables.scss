@@ -29,6 +29,7 @@ $breakpoint-size: (
   "md": 768,
   "lg": 1060,
   "xl": 1280,
+  "xxl": 1440,
 );
 
 // ブレークポイント (SP基準)
@@ -37,6 +38,7 @@ $breakpoints: (
   md: "(min-width: #{map-get($breakpoint-size,'md')}px)",
   lg: "(min-width: #{map-get($breakpoint-size,'lg')}px)",
   xl: "(min-width: #{map-get($breakpoint-size,'xl')}px)",
+  xxl: "(min-width: #{map-get($breakpoint-size,'xxl')}px)",
   "hover": "(hover: hover)",
 );
 
