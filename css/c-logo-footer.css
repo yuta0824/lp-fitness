@@ -1,9 +1,0 @@
-.c-logo-footer {
-  width: 76px;
-  display: inline-block;
-}
-@media (min-width: 768px) {
-  .c-logo-footer {
-    width: 130px;
-  }
-}

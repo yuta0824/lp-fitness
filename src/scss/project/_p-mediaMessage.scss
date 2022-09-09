@@ -1,0 +1,78 @@
+@use '../global' as g;
+
+.p-mediaMessage {
+  @include g.mq("md") {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+.p-mediaMessage--reverse {
+  @include g.mq("md") {
+    flex-direction: row;
+  }
+
+  .p-mediaMessage__img {
+    margin-left: 0;
+  }
+
+  .p-mediaMessage__body {
+    margin-left: auto;
+  }
+}
+
+.p-mediaMessage__img {
+  @include g.mq("md") {
+    width: 42.6%;
+    margin-left: auto;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.p-mediaMessage__body {
+  @include g.mq("md") {
+    width: 48%;
+		margin-top: 0;
+  }
+  margin-top: 22px;
+}
+
+.p-mediaMessage__head {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  @include g.mq("md") {
+    font-size: 24px;
+  }
+}
+
+.p-mediaMessage__textWrap {
+  margin-top: 11px;
+
+	@include g.mq("md") {
+		margin-top: 17px;
+	}
+}
+
+.p-mediaMessage__text {
+  letter-spacing: 0.03em;
+	@include g.mq("md") {
+		line-height:2;
+	}
+}
+
+.p-mediaMessage__name {
+  margin-top: 8px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+
+  @include g.mq("md") {
+		margin-top: 17px;
+    font-size: 16px;
+		text-align: right;
+  }
+}

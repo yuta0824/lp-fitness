@@ -2,7 +2,7 @@
 
 .p-mv {
   width: 100%;
-  height: g.vw(375, 602);
+  height: g.vw(375, 601);
   padding-top: g.vw(375, 39);
   background: transparent url(../img/bg_top_sp.jpg) no-repeat center center /
     cover;
@@ -29,7 +29,7 @@
   font-size: g.vw(375, 22);
   font-weight: 600;
   letter-spacing: 0.1em;
-  line-height: 1.6;
+  line-height: 1.65;
   text-align: center;
 
   @include g.mq("md") {
@@ -37,6 +37,7 @@
     text-align: left;
   }
 }
+
 .p-mv__title--large {
   @include g.mq("md") {
     font-size: g.vw(1440, 40);
@@ -46,7 +47,6 @@
 .p-mv__subTitle {
   font-size: g.vw(375, 14);
   font-weight: 600;
-  letter-spacing: 0.1em;
   line-height: 1.5;
   margin-top: g.vw(375, 12);
   text-align: center;
