@@ -7,6 +7,8 @@
   font-size: 20px;
   text-align: center;
   color: g.$cr-m;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
 
   @include g.mq("md") {
     font-size: 32px;
@@ -14,7 +16,7 @@
 }
 
 .p-message__items {
-  margin-top: 40px;
+  margin-top: 36px;
 }
 
 .p-message__item {

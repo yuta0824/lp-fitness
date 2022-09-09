@@ -36,28 +36,33 @@
   @include g.mq("md") {
     width: 43%;
   }
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 .p-mediaMessage__head {
   font-size: 18px;
   font-weight: 600;
-
+	letter-spacing: 0.05em;
+	line-height: 1.5;
 	@include g.mq("md") {
 		font-size: 24px;
+
 	}
 }
 
 .p-mediaMessage__textWrap {
-  margin-top: 20px;
+  margin-top: 11px;
 }
 
 .p-mediaMessage__text {
+	letter-spacing: 0.03em;
 }
 
 .p-mediaMessage__name {
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 14px;
+	letter-spacing: 0.05em;
+
 
 	@include g.mq("md") {
 		font-size: 16px;
