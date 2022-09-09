@@ -10,7 +10,18 @@
   @include g.mq("md") {
     background: transparent url(../img/bg_top_pc.jpg) no-repeat center center /
       cover;
-    height: 681px;
+    height: g.vw(1440, 681);
+    padding-top: 15.5%;
+  }
+}
+
+.p-mv__inner {
+  @include g.mq("md") {
+    margin: 0 auto;
+    width: 100%;
+    max-width: g.vw(1440, 1140);
+    padding-left: g.$pd-pc;
+    padding-right: g.$pd-pc;
   }
 }
 
@@ -20,8 +31,18 @@
   letter-spacing: 0.1em;
   line-height: 1.6;
   text-align: center;
-}
 
+  @include g.mq("md") {
+    font-size: g.vw(1440, 32);
+    text-align: left;
+  }
+}
+.p-mv__title--large {
+  @include g.mq("md") {
+    font-size: g.vw(1440, 40);
+    line-height: 1.5;
+  }
+}
 .p-mv__subTitle {
   font-size: g.vw(375, 14);
   font-weight: 600;
@@ -29,4 +50,11 @@
   line-height: 1.5;
   margin-top: g.vw(375, 12);
   text-align: center;
+
+  @include g.mq("md") {
+    font-size: g.vw(1440, 22);
+    text-align: left;
+    margin-top: g.vw(1440, 30);
+    letter-spacing: 0;
+  }
 }
