@@ -1,21 +1,51 @@
 @use '../global' as g;
 
 .p-mediaMessage {
+  @include g.mq("md") {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.p-mediaMessage--reverse {
+  @include g.mq("md") {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .p-mediaMessage__img {
+    margin-left: 0;
+  }
+
+  .p-mediaMessage__body {
+    margin-left: auto;
+  }
 }
 
 .p-mediaMessage__img {
-	img {
-		width: 100%;
-	}
+  @include g.mq("md") {
+    width: 45%;
+    margin-left: auto;
+  }
+  img {
+    width: 100%;
+  }
 }
 
 .p-mediaMessage__body {
-	margin-top: 20px;
+  @include g.mq("md") {
+    width: 43%;
+  }
+  margin-top: 20px;
 }
 
 .p-mediaMessage__head {
   font-size: 18px;
   font-weight: 600;
+
+	@include g.mq("md") {
+		font-size: 24px;
+	}
 }
 
 .p-mediaMessage__textWrap {
@@ -28,4 +58,8 @@
 .p-mediaMessage__name {
   margin-top: 10px;
   font-size: 14px;
+
+	@include g.mq("md") {
+		font-size: 16px;
+	}
 }

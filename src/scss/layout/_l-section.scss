@@ -1,6 +1,9 @@
 @use "../global" as g;
 
 .l-section {
-  margin-top: g.$header-height-pc;
   padding: 56px 0 80px;
+
+	@include g.mq("md") {
+		padding: 96px 0;
+	}
 }
