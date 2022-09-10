@@ -1,0 +1,20 @@
+@use '../global' as g;
+
+.p-item-message {
+  border: 1px solid g.$cr-m;
+  background: #fff;
+  padding: 22px 18px;
+}
+
+.p-item-message__title {
+  font-size: 40px;
+	line-height: 1;
+	letter-spacing: 0.1em;
+  text-align: center;
+  color: g.$cr-m;
+}
+
+.p-item-message__text {
+	margin-top: 16px;
+	letter-spacing: 0.02em;
+}

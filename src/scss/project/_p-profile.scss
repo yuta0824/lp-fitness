@@ -1,0 +1,36 @@
+@use '../global' as g;
+.p-profile {
+}
+
+.p-profile__img {
+  margin-top: 47px;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.p-profile__top {
+  margin-top: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.p-profile__name {
+  letter-spacing: 0.1em;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.p-profile__sns {
+  margin-left: auto;
+}
+
+.p-profile__text {
+  margin-top: 16px;
+  letter-spacing: 0.02em;
+}
+
+.p-profile__message {
+  margin-top: 48px;
+}
