@@ -1,0 +1,22 @@
+@use '../global' as g;
+
+.p-voice {
+}
+
+.p-voice__items {
+  margin-top: 44px;
+
+	@include g.mq("md") {
+		margin-top: 84px;
+	}
+}
+
+.p-voice__item {
+  &:not(:first-child) {
+    margin-top: 40px;
+
+		@include g.mq("md") {
+			margin-top: 80px;
+		}
+  }
+}

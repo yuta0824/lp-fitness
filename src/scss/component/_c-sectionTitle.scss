@@ -9,6 +9,7 @@
     @include g.mq("md") {
       display: flex;
       align-items: center;
+      letter-spacing: 0.08em;
     }
   }
 }
@@ -21,8 +22,12 @@
   display: inline-block;
 
   @include g.mq("md") {
-    font-size: 56px;
+    font-size: 50px;
   }
+
+	@include g.mq("lg") {
+		font-size: 56px;
+	}
 }
 .c-sectionTitle__ja {
   font-size: 14px;
@@ -32,6 +37,11 @@
   margin-top: 5px;
 
   @include g.mq("md") {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+
+  @include g.mq("lg") {
     margin-top: 40px;
     font-size: 16px;
   }
