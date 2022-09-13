@@ -54,7 +54,10 @@
 }
 
 .l-section--price {
-	padding: 63px 0 56px;
-
+  padding: 63px 0 56px;
   background: transparent url(../img/bg_deco.png) no-repeat left top / contain;
+
+  @include g.mq("md") {
+    padding: 91px 0 96px;
+  }
 }
