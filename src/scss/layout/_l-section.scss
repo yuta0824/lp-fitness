@@ -15,3 +15,13 @@
 		padding: 93px 0 91px;
 	}
 }
+
+.l-section--worry {
+	background: g.$cr-gray;
+	padding: 0 0 56px;
+
+	@include g.mq("md") {
+		background: transparent url(../img/bg_worry_pc.jpg) no-repeat top right 30%/ cover;
+		padding: 96px 0 96px;
+	}
+}
