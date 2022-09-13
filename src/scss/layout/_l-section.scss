@@ -27,9 +27,9 @@
 }
 
 .l-section--flow {
-	padding: 35px 0 56px;
+	padding: 35px 0 0;
 
 	@include g.mq("md") {
-		padding: 74px 0 96px;
+		padding: 74px 0 0;
 	}
 }
