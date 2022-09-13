@@ -1,0 +1,38 @@
+@use '../global' as g;
+
+.p-feature {
+}
+
+.p-feature__items {
+  margin-top: 40px;
+
+  @include g.mq("md") {
+    margin-top: 80px;
+  }
+}
+
+.p-feature__item {
+  &:not(:first-child) {
+    margin-top: 38px;
+
+    @include g.mq("md") {
+      margin-top: 80px;
+    }
+  }
+}
+
+.p-feature__banner {
+  margin-top: 56px;
+  display: block;
+
+	@include g.mq("md") {
+		margin-top: 75px;
+	}
+	@include g.mq("lg") {
+		margin-top: 92px;
+	}
+
+	img {
+		width: 100%;
+	}
+}

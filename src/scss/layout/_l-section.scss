@@ -25,3 +25,11 @@
 		padding: 96px 0 96px;
 	}
 }
+
+.l-section--flow {
+	padding: 35px 0 0;
+
+	@include g.mq("md") {
+		padding: 74px 0 0;
+	}
+}
