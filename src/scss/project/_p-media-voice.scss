@@ -1,0 +1,69 @@
+@use '../global' as g;
+
+.p-media-voice {
+  @include g.mq("md") {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-media-voice__img {
+  @include g.mq("md") {
+    width: calc(400 / 1060 * 100%);
+  }
+
+  @include g.mq("lg") {
+    width: calc(450 / 1060 * 100%);
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.p-media-voice__body {
+  margin-top: 16px;
+
+  @include g.mq("md") {
+    width: calc(450 / 1060 * 100%);
+    margin-left: calc(50 / 1060 * 100%);
+    margin-top: 0;
+    flex: 1;
+  }
+
+  @include g.mq("lg") {
+    margin-left: calc(71 / 1060 * 100%);
+  }
+}
+
+.p-media-voice__title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: calc(27 / 18);
+  letter-spacing: 0.05em;
+  color: g.$cr-m;
+
+  @include g.mq("md") {
+    padding-left: 18px;
+    font-size: 22px;
+    line-height: calc(50 / 28);
+  }
+}
+
+.p-media-voice__name {
+  margin-top: 12px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+	line-height: calc(21 / 14);
+}
+
+.p-media-voice__text {
+  letter-spacing: 0.05em;
+  line-height: calc(28.8 / 16);
+  margin-top: 12px;
+
+  @include g.mq("md") {
+    margin-top: 32px;
+    line-height: 2;
+    letter-spacing: 0.05em;
+  }
+}

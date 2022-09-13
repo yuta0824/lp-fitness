@@ -3,33 +3,45 @@
 .l-section {
   padding: 56px 0 56px;
 
-	@include g.mq("md") {
-		padding: 95px 0 96px;
-	}
+  @include g.mq("md") {
+    padding: 95px 0 96px;
+  }
 }
 
 .l-section--profile {
-	padding: 40px 0 80px;
+  padding: 40px 0 80px;
 
-	@include g.mq("md") {
-		padding: 93px 0 91px;
-	}
+  @include g.mq("md") {
+    padding: 93px 0 91px;
+  }
 }
 
 .l-section--worry {
-	background: g.$cr-gray;
-	padding: 0 0 56px;
+  background: g.$cr-gray;
+  padding: 0 0 56px;
 
-	@include g.mq("md") {
-		background: transparent url(../img/bg_worry_pc.jpg) no-repeat top right 30%/ cover;
-		padding: 96px 0 96px;
-	}
+  @include g.mq("md") {
+    background: transparent url(../img/bg_worry_pc.jpg) no-repeat top right 30% /
+      cover;
+    padding: 96px 0 96px;
+  }
 }
 
 .l-section--flow {
-	padding: 35px 0 0;
+  padding: 35px 0 0;
 
-	@include g.mq("md") {
-		padding: 74px 0 0;
-	}
+  @include g.mq("md") {
+    padding: 74px 0 0;
+  }
+}
+
+.l-section--voice {
+  margin-top: g.vw(375, -31);
+  background: transparent url(../img/bg_deco02.jpg) no-repeat center center /
+    cover;
+  padding: 94px 0 59px;
+
+  @include g.mq("sm") {
+    padding-top: 100px;
+  }
 }

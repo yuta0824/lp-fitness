@@ -1,0 +1,15 @@
+@use '../global' as g;
+
+.p-voice {
+	background: transparent url(../img/bg_deco02.jpg) no-repeat center center / cover;
+}
+
+.p-voice__items {
+  margin-top: 44px;
+}
+
+.p-voice__item {
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+}
