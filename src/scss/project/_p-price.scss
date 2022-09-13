@@ -1,0 +1,36 @@
+@use '../global' as g;
+
+.p-price {
+  text-align: center;
+}
+
+.p-price__monthly {
+  margin-top: 40px;
+  padding-right: 25px;
+
+  @include g.mq("sm") {
+    padding-right: 0;
+  }
+}
+
+.p-price__text-primary {
+  margin-top: 35px;
+  line-height: calc(24 / 18);
+  color: g.$cr-m;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+.p-price__text-secondary {
+  letter-spacing: 0.1em;
+  margin-top: 10px;
+  line-height: calc(21 / 14);
+  color: g.$cr-m;
+  font-size: 14px;
+}
+
+.p-price__text-tertiary {
+  letter-spacing: 0.02em;
+  margin-top: 33px;
+  font-size: 16px;
+}
