@@ -1,0 +1,14 @@
+@use '../global' as g;
+.l-betweenSections {
+  margin-top: 48px;
+  margin: 0 auto;
+  padding-left: g.$pd-sp;
+  padding-right: g.$pd-sp;
+  width: 100%;
+
+  @include g.mq("md") {
+    padding-left: g.$pd-pc;
+    padding-right: g.$pd-pc;
+    margin-top: 96px;
+  }
+}

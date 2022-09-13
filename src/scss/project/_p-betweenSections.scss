@@ -1,0 +1,38 @@
+@use '../global' as g;
+
+.p-betweenSections {
+}
+
+.p-betweenSections__text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: calc(27 / 16);
+  color: g.$cr-m;
+  letter-spacing: 0.05em;
+  text-align: center;
+
+  @include g.mq("md") {
+		line-height: 2;
+    letter-spacing: 0.1em;
+    font-size: 32px;
+  }
+}
+
+.p-betweenSections__arrow {
+  margin-top: 40px;
+  display: block;
+  text-align: center;
+
+	@include g.mq("md") {
+		margin-top: 52px;
+	}
+
+  img {
+    width: 36px;
+    display: inline-block;
+
+    @include g.mq("md") {
+      width: 64px;
+    }
+  }
+}
