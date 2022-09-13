@@ -37,11 +37,18 @@
 
 .l-section--voice {
   margin-top: g.vw(375, -31);
-  background: transparent url(../img/bg_deco02.jpg) no-repeat center center /
+  background: transparent url(../img/bg_voice_sp.jpg) no-repeat center center /
     cover;
   padding: 94px 0 59px;
 
   @include g.mq("sm") {
     padding-top: 100px;
+  }
+
+  @include g.mq("md") {
+    background: transparent url(../img/bg_voice_pc.jpg) no-repeat center center /
+      cover;
+    padding: 164px 0 99px;
+    margin-top: -68px;
   }
 }
