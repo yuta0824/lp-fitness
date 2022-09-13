@@ -1,0 +1,33 @@
+@use '../global' as g;
+
+.p-worry {
+}
+
+.p-worry__img {
+  img {
+    width: 100%;
+  }
+}
+
+.p-worry__body {
+  margin: 0 auto;
+  // max-width: 415px;
+}
+
+.p-worry__title {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 37px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.p-worry__lists {
+  margin-top: 25px;
+}
+
+.p-worry__list {
+  &:not(:first-child) {
+    margin-top: 11px;
+  }
+}
