@@ -1,0 +1,14 @@
+@use '../global' as g;
+
+.p-feature {
+}
+
+.p-feature__items {
+  margin-top: 40px;
+}
+
+.p-feature__item {
+  &:not(:first-child) {
+    margin-top: 38px;
+  }
+}

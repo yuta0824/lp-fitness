@@ -1,0 +1,40 @@
+@use '../global' as g;
+
+.p-media-feature {
+}
+
+.p-media-feature__img {
+  img {
+    width: 100%;
+  }
+}
+
+.p-media-feature__body {
+  margin-top: 22px;
+}
+
+.p-media-feature__title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: calc(32.4 / 18);
+  letter-spacing: 0.05em;
+  padding-left: 11px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 1px;
+    background: g.$cr-m;
+  }
+}
+
+.p-media-feature__text {
+	letter-spacing: 0.02em;
+  line-height: calc(28.8 / 16);
+  margin-top: 12px;
+}
