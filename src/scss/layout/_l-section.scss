@@ -1,9 +1,17 @@
 @use "../global" as g;
 
 .l-section {
-  padding: 56px 0 80px;
+  padding: 56px 0 56px;
 
 	@include g.mq("md") {
 		padding: 95px 0 96px;
+	}
+}
+
+.l-section--profile {
+	padding: 40px 0 80px;
+
+	@include g.mq("md") {
+		padding: 93px 0 91px;
 	}
 }
