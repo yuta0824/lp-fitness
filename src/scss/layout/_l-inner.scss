@@ -24,7 +24,7 @@
 .l-inner--narrow {
   @extend .l-inner-base;
   @include g.mq("md") {
-    max-width: 768px + g.$pd-pc * 2;
+    max-width: 878px + g.$pd-pc * 2;
   }
 }
 

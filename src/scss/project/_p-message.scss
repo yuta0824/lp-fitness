@@ -17,11 +17,18 @@
 }
 
 .p-message__items {
-  margin-top: 78px;
+	margin-top: 40px;
+
+	@include g.mq("md") {
+		margin-top: 78px;
+	}
 }
 
 .p-message__item {
-  &:not(:first-child) {
-    margin-top: 79px;
+	&:not(:first-child) {
+		margin-top: 40px;
+		@include g.mq("md") {
+			margin-top: 79px;
+		}
   }
 }
