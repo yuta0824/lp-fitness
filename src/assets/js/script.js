@@ -8,8 +8,10 @@ jQuery(window).on("load", function () {
 jQuery(window).on("scroll", function () {
 	if (100 < jQuery(this).scrollTop()) {
 		jQuery("body").attr("data-scroll", "true");
+		jQuery(".js-header").addClass("is-scroll");
 	} else {
 		jQuery("body").attr("data-scroll", "false");
+		jQuery(".js-header").removeClass("is-scroll");
 	}
 });
 
