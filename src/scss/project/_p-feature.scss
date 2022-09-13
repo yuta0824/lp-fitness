@@ -5,10 +5,18 @@
 
 .p-feature__items {
   margin-top: 40px;
+
+	@include g.mq("md") {
+		margin-top: 80px;
+	}
 }
 
 .p-feature__item {
   &:not(:first-child) {
     margin-top: 38px;
+
+		@include g.mq("md") {
+			margin-top: 80px;
+		}
   }
 }
