@@ -4,17 +4,33 @@
   border: 1px solid g.$cr-m;
   background: #fff;
   padding: 22px 18px;
+
+  @include g.mq("lg") {
+    padding: 54px 90px 70px;
+  }
+  @include g.mq("md") {
+    padding: 40px 70px 60px;
+  }
 }
 
 .p-item-message__title {
   font-size: 40px;
-	line-height: 1;
-	letter-spacing: 0.1em;
+  line-height: 1;
+  letter-spacing: 0.1em;
   text-align: center;
   color: g.$cr-m;
+
+  @include g.mq("md") {
+    font-size: 56px;
+  }
 }
 
 .p-item-message__text {
-	margin-top: 16px;
-	letter-spacing: 0.02em;
+  margin-top: 16px;
+  letter-spacing: 0.02em;
+
+  @include g.mq("md") {
+    line-height: 2;
+    margin-top: 30px;
+  }
 }

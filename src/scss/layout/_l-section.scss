@@ -10,4 +10,8 @@
 
 .l-section--profile {
 	padding: 40px 0 80px;
+
+	@include g.mq("md") {
+		padding: 93px 0 91px;
+	}
 }

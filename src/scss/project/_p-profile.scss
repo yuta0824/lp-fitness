@@ -2,16 +2,45 @@
 .p-profile {
 }
 
+.p-profile__contents {
+  @include g.mq("md") {
+    display: flex;
+    margin-top: 80px;
+  }
+}
+
 .p-profile__img {
   margin-top: 47px;
   width: 100%;
+
+  @include g.mq("md") {
+    width: calc(400 / 878 * 100%);
+    margin-top: 0;
+  }
+
+  @include g.mq("lg") {
+    width: calc(360 / 878 * 100%);
+  }
+
   img {
     width: 100%;
   }
 }
 
-.p-profile__top {
+.p-profile__body {
   margin-top: 21px;
+  @include g.mq("md") {
+    flex: 1;
+    margin-top: 0;
+    margin-left: calc(40 / 878 * 100%);
+  }
+
+  @include g.mq("lg") {
+    margin-left: calc(90 / 878 * 100%);
+  }
+}
+
+.p-profile__top {
   display: flex;
   align-items: center;
 }
@@ -29,8 +58,16 @@
 .p-profile__text {
   margin-top: 16px;
   letter-spacing: 0.02em;
+
+  @include g.mq("md") {
+    line-height: 2;
+  }
 }
 
 .p-profile__message {
   margin-top: 48px;
+
+  @include g.mq("md") {
+    margin-top: 83px;
+  }
 }
