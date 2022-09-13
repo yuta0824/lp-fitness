@@ -1,24 +1,23 @@
 @use '../global' as g;
 
 .c-text-checkMark {
-  padding-left: 24px + 8px;
-  text-indent: -24px + -8px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-left: calc(24px + 8px);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: transparent url(../img/icon-check.png) no-repeat center center / contain;
+  }
 
   @include g.mq("md") {
     font-size: 18px;
-		letter-spacing: 0.05em;
-  }
-
-  > img {
-    margin-right: 8px;
-    width: 24px;
-    vertical-align: bottom;
-    display: inline-block;
-
-		@include g.mq("md") {
-			vertical-align: top;
-		}
+    letter-spacing: 0.05em;
   }
 }
