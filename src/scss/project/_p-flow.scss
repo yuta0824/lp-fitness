@@ -6,23 +6,27 @@
 .p-flow__items {
   margin-top: 45px;
 
-	@include g.mq("md") {
-		display: flex;
-		justify-content: space-between;
-		margin-top: 80px;
-	}
+  @include g.mq("md") {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
 }
 
 .p-flow__item {
   &:not(:first-child) {
     margin-top: 40px;
 
-		@include g.mq("md") {
-			margin-top: 0;
-		}
+    @include g.mq("md") {
+      margin-top: 0;
+    }
   }
 
-	@include g.mq("md") {
-		width: calc(300 / 1060 * 100%);
-	}
+  @include g.mq("md") {
+    width: 31%;
+  }
+
+  @include g.mq("lg") {
+    width: calc(300 / 1060 * 100%);
+  }
 }
