@@ -35,6 +35,7 @@
   letter-spacing: 0.05em;
 
   @include g.mq("md") {
+		letter-spacing: 0.19em;
     width: 600px;
     font-size: 28px;
     padding: 27px 37px;
