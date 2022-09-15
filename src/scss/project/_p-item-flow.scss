@@ -1,0 +1,41 @@
+@use '../global' as g;
+
+.p-item-flow {
+}
+
+.p-item-flow__img {
+  img {
+    width: 100%;
+  }
+}
+
+.p-item-flow__step {
+  color: g.$cr-m;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  margin-top: 22px;
+}
+
+.p-item-flow__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(27 / 18);
+  letter-spacing: 0.05em;
+  margin-top: 16px;
+
+	@include g.mq("md") {
+		letter-spacing: 0.05em;
+		font-size: 22px;
+	}
+}
+
+.p-item-flow__text {
+  line-height: calc(28.8 / 16);
+  letter-spacing: 0.02em;
+  margin-top: 8px;
+
+	@include g.mq("md") {
+		letter-spacing: 0.03em;
+		line-height: 2;
+	}
+}
