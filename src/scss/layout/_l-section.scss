@@ -64,15 +64,21 @@
 
 .l-section--cta {
   padding: 53px 0 56px;
-  background: transparent url(../img/bg_cta_sp.jpg) no-repeat center center / cover;
+  background: transparent url(../img/bg_cta_sp.jpg) no-repeat center center /
+    cover;
 
   @include g.mq("md") {
-		background: transparent url(../img/bg_cta_pc.jpg) no-repeat center center / cover;
+    background: transparent url(../img/bg_cta_pc.jpg) no-repeat center center /
+      cover;
     padding: 91px 0 96px;
   }
 }
 
 .l-section--flow {
-	padding: 58px 0 58px;
-	background: g.$cr-gray;
+  padding: 58px 0 58px;
+  background: g.$cr-gray;
+
+  @include g.mq("md") {
+    padding: 91px 0 96px;
+  }
 }

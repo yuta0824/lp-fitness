@@ -22,10 +22,20 @@
   line-height: calc(27 / 18);
   letter-spacing: 0.05em;
   margin-top: 16px;
+
+	@include g.mq("md") {
+		letter-spacing: 0.05em;
+		font-size: 22px;
+	}
 }
 
 .p-item-flow__text {
   line-height: calc(28.8 / 16);
   letter-spacing: 0.02em;
   margin-top: 8px;
+
+	@include g.mq("md") {
+		letter-spacing: 0.03em;
+		line-height: 2;
+	}
 }
