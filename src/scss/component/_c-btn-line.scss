@@ -28,9 +28,10 @@
 .c-btn-line--wide {
   @extend .c-btn-line--base;
   box-shadow: 0 2px 5px 0 rgba($color: #000000, $alpha: 0.16);
-  width: 295px;
+  min-width: 295px;
+	width: 100%;
   font-size: 16px;
-  padding: 20px 33px;
+  padding: 22px 20px;
   letter-spacing: 0.05em;
 
   @include g.mq("md") {
