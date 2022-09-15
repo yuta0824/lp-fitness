@@ -1,0 +1,14 @@
+@use '../global' as g;
+
+.p-flow {
+}
+
+.p-flow__items {
+  margin-top: 45px;
+}
+
+.p-flow__item {
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+}
