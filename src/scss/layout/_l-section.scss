@@ -61,3 +61,13 @@
     padding: 91px 0 96px;
   }
 }
+
+.l-section--cta {
+  padding: 53px 0 56px;
+  background: transparent url(../img/bg_cta_sp.jpg) no-repeat center center / cover;
+
+  @include g.mq("md") {
+		background: transparent url(../img/bg_cta_pc.jpg) no-repeat center center / cover;
+    padding: 91px 0 96px;
+  }
+}

@@ -1,0 +1,145 @@
+@use '../global' as g;
+
+.p-cta {
+}
+
+.p-cta__wrap {
+  background: rgba($color: #fff, $alpha: 0.95);
+  border: 1px solid g.$cr-m;
+  padding: 40px 20px;
+
+  @include g.mq("md") {
+    padding: 60px 40px;
+  }
+  @include g.mq("lg") {
+    padding: 64px 91px;
+  }
+}
+
+.p-cta__title {
+  width: calc(100% + 24px);
+  margin-left: -12px;
+  text-align: center;
+  padding: 16px 0;
+  color: g.$cr-m;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  border-top: 1px solid g.$cr-m;
+  border-bottom: 1px solid g.$cr-m;
+
+  @include g.mq("sm") {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  @include g.mq("md") {
+    max-width: 100%;
+    width: 100%;
+    font-size: 36px;
+    padding: 23px 0;
+    letter-spacing: 0.15em;
+  }
+
+  @include g.mq("lg") {
+    font-size: 40px;
+    padding: 29px 0 29px 21px;
+  }
+}
+
+.p-cta__inner {
+  white-space: nowrap;
+  margin-top: 23px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 220px;
+
+  @include g.mq("md") {
+    max-width: 600px;
+    margin-top: 42px;
+  }
+}
+
+.p-cta__bubble {
+  text-align: right;
+  margin-right: -35px;
+
+	@include g.mq("md") {
+		margin-right: -25px;
+	}
+
+	@include g.mq("lg") {
+		margin-right: -35px;
+	}
+}
+
+.p-cta__text {
+  letter-spacing: 0.15em;
+  margin-top: 12px;
+
+  @include g.mq("md") {
+    font-size: 28px;
+    margin-top: -4px;
+  }
+}
+
+.p-cta__priceWrap {
+  margin-top: 4px;
+
+  @include g.mq("md") {
+    margin-top: -15px;
+  }
+}
+
+.p-cta__period {
+  margin-top: 25px;
+
+  @include g.mq("md") {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-right: 12px;
+  }
+}
+
+.p-cta__period-textBox {
+  border: 1px solid g.$cr-txt;
+  display: inline-block;
+  line-height: 1;
+  padding: 6px 6px;
+  font-size: 14px;
+
+  @include g.mq("md") {
+    font-size: 18px;
+    padding: 11px 22px;
+  }
+}
+
+.p-cta__period-text {
+  margin-top: 8px;
+  letter-spacing: 0.05em;
+  line-height: calc(24 / 16);
+
+  @include g.mq("md") {
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 0;
+  }
+}
+
+.p-cta__btn {
+  margin-top: 35px;
+
+  @include g.mq("sm") {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include g.mq("md") {
+    max-width: 600px;
+    margin-top: 49px;
+  }
+}

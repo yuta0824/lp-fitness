@@ -1,20 +1,21 @@
 @use '../global' as g;
 
-.c-text-speechBubble {
+.c-text-bubble {
   letter-spacing: 0.05em;
   font-size: 14px;
   line-height: 1;
   color: g.$cr-m;
-  padding: 7px 9px;
+  background: #fff;
+  padding: 6px 9px;
   border: 1px solid g.$cr-m;
   display: inline-block;
   transform: skew(-10deg);
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
 
-	@include g.mq("md") {
+  @include g.mq("md") {
     font-size: 24px;
-		padding: 15px 23px;
+    padding: 15px 23px;
   }
 
   span {
@@ -24,29 +25,26 @@
 
   &::before,
   &::after {
-    transform: skew(10deg);
     content: "";
     position: absolute;
-    left: 50%;
     width: 0;
     height: 0;
     border-style: solid;
-    transform: translateX(-50%) skew(10deg);
+    transform: skew(10deg);
+    border-width: 12px 9px 0 0;
   }
 
   &::before {
-    border-width: 23px 20px 0 0;
     border-color: #ffffff transparent transparent transparent;
-    bottom: -22px;
-    left: calc(50% - 1px);
+    bottom: -11px;
+    right: calc(45% + 1px);
     z-index: 3;
   }
 
   &::after {
-    border-width: 23px 20px 0 0;
     border-color: g.$cr-m transparent transparent transparent;
-    bottom: -23px;
-    left: 50%;
+    bottom: -12px;
+    right: 45%;
     z-index: 2;
   }
 }

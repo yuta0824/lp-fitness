@@ -1,0 +1,87 @@
+@use '../global' as g;
+
+.p-priceWrap {
+  display: flex;
+  align-items: center;
+}
+
+.p-priceWrap__left {
+}
+
+.p-priceWrap__text1 {
+  display: block;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+
+  @include g.mq("md") {
+    font-size: 24px;
+  }
+}
+
+.p-priceWrap__text2 {
+  display: block;
+  font-size: 24px;
+  line-height: calc(36 / 24);
+
+  @include g.mq("md") {
+    font-size: 40px;
+  }
+}
+
+.p-priceWrap__text2--small {
+  font-size: 24px;
+	padding-left: 5px;
+	display: none;
+
+	@include g.mq("md") {
+		display: inline-block;
+	}
+}
+
+.p-priceWrap__arrow {
+  margin-top: 14px;
+  margin-left: 14px;
+  width: 24px;
+
+  @include g.mq("md") {
+    margin-left: 97px;
+    width: 49px;
+  }
+
+  img {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.p-priceWrap__right {
+  margin-left: 12px;
+
+  @include g.mq("md") {
+    margin-left: 68px;
+  }
+}
+
+.p-priceWrap__yen {
+  font-size: 40px;
+  color: g.$cr-m;
+  display: inline-block;
+  line-height: 1.3;
+  letter-spacing: -0.47em;
+
+  @include g.mq("md") {
+    font-size: 72px;
+  }
+}
+
+.p-priceWrap__zero {
+  letter-spacing: -0.12em;
+  font-size: 72px;
+  color: g.$cr-m;
+  line-height: 1;
+  display: inline-block;
+
+  @include g.mq("md") {
+    font-size: 160px;
+  }
+}
