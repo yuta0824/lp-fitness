@@ -11,6 +11,11 @@
   font-weight: 600;
   line-height: calc(27 / 18);
   letter-spacing: 0.1em;
+
+  @include g.mq("md") {
+    font-size: 24px;
+    line-height: 1;
+  }
 }
 
 .p-info__name-ja {
@@ -18,35 +23,69 @@
   margin-top: 8px;
   line-height: calc(21 / 14);
   letter-spacing: 0.02em;
+
+  @include g.mq("md") {
+    font-size: 16px;
+    margin-top: 14px;
+    letter-spacing: 0.1em;
+    line-height: calc(24 / 16);
+  }
 }
 
 .p-info__addressWrap {
   line-height: calc(28.8 / 16);
   margin-top: 20px;
+
+  @include g.mq("md") {
+    line-height: 1.5;
+    margin-top: 45px;
+    font-size: 16px;
+  }
 }
 
 .p-info__address-number {
   letter-spacing: 0.07em;
+
+  @include g.mq("md") {
+    letter-spacing: 0.11em;
+  }
 }
 
 .p-info__address {
   letter-spacing: 0.02em;
+
+  @include g.mq("md") {
+		margin-top: 10px;
+    letter-spacing: 0.11em;
+  }
 }
 
 .p-info__directions {
   line-height: calc(28.8 / 16);
   letter-spacing: 0.02em;
   margin-top: 12px;
+
+  @include g.mq("md") {
+    letter-spacing: 0.1em;
+    margin-top: 28px;
+  }
 }
 
 .p-info__tel {
   margin-top: 14px;
   letter-spacing: 0.12em;
+
+  @include g.mq("md") {
+    margin-top: 26px;
+  }
 }
 
 .p-info__businessHour {
   line-height: calc(28.8 / 16);
   letter-spacing: 0.12em;
-
   margin-top: 12px;
+
+  @include g.mq("md") {
+    margin-top: 26px;
+  }
 }

@@ -5,13 +5,27 @@
 
 .p-access__wrap {
   margin-top: 43px;
+
+  @include g.mq("md") {
+    margin-top: 80px;
+    display: flex;
+  }
 }
 
 .p-access__info {
+	@include g.mq("md") {
+		width: 49%;
+	}
 }
 
 .p-access__map {
   margin-top: 40px;
-	width: 100vw;
-	margin-left: calc(50% - 50vw);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+
+	@include g.mq("md") {
+		margin-top: 0;
+		margin-left: auto;
+		width: calc(520 / 1060 * 100%);
+	}
 }
