@@ -6,7 +6,7 @@
   color: g.$cr-txt;
 
   @include g.mq("md") {
-    height: 48px 0 40px;
+    padding: 48px 0 40px;
   }
 }
 
