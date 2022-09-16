@@ -6,4 +6,8 @@
 
 .p-faq__items {
 	margin-top: 45px;
+
+	@include g.mq("md") {
+		margin-top: 88px;
+	}
 }
