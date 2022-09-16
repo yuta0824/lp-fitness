@@ -1,0 +1,52 @@
+@use '../global' as g;
+
+.p-info {
+}
+
+.p-info__name {
+}
+
+.p-info__name-en {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: calc(27 / 18);
+  letter-spacing: 0.1em;
+}
+
+.p-info__name-ja {
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: calc(21 / 14);
+  letter-spacing: 0.02em;
+}
+
+.p-info__addressWrap {
+  line-height: calc(28.8 / 16);
+  margin-top: 20px;
+}
+
+.p-info__address-number {
+  letter-spacing: 0.07em;
+}
+
+.p-info__address {
+  letter-spacing: 0.02em;
+}
+
+.p-info__directions {
+  line-height: calc(28.8 / 16);
+  letter-spacing: 0.02em;
+  margin-top: 12px;
+}
+
+.p-info__tel {
+  margin-top: 14px;
+  letter-spacing: 0.12em;
+}
+
+.p-info__businessHour {
+  line-height: calc(28.8 / 16);
+  letter-spacing: 0.12em;
+
+  margin-top: 12px;
+}

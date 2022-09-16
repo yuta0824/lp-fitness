@@ -1,0 +1,17 @@
+@use '../global' as g;
+
+.p-access {
+}
+
+.p-access__wrap {
+  margin-top: 43px;
+}
+
+.p-access__info {
+}
+
+.p-access__map {
+  margin-top: 40px;
+	width: 100vw;
+	margin-left: calc(50% - 50vw);
+}
