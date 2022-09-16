@@ -105,11 +105,3 @@ jQuery('.js-focus-trap').focus(function () {
 	jQuery('.js-btn-drawer').focus();
 });
 
-//トップへ戻るスクロール検知
-jQuery(window).on("scroll", function () {
-	if (400 < jQuery(this).scrollTop()) {
-		jQuery(".js-top").addClass("is-show");
-	} else {
-		jQuery(".js-top").removeClass("is-show");
-	}
-});
