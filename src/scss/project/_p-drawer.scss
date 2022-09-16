@@ -13,19 +13,21 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: calc(100% - 250px);
+  width: 100%;
   height: calc(100vh - #{g.$header-height-sp});
   height: 100%;
   background: rgba(140, 109, 59, 0.7);
   transform: translateX(-100%);
   margin-top: g.$header-height-sp;
-  transition: transform 0.6s ease-in;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
 
   @include g.mq("md") {
     margin-top: g.$header-height-pc;
   }
 
   &.is-open {
+    opacity: 1;
     transform: translateX(0px);
   }
 }
@@ -41,7 +43,7 @@
   margin-top: g.$header-height-sp;
   padding: 40px 15px 50px;
   background: g.$drawer-content-bg;
-  transition: transform 0.6s ease-in;
+  transition: transform 0.4s ease-in;
 
   @include g.mq("md") {
     margin-top: g.$header-height-pc;
@@ -64,7 +66,7 @@
   width: 100%;
   display: inline-block;
   text-align: center;
-	 transition: color 0.3s;
+  transition: color 0.3s;
 
   @include g.mq("hover") {
     &:hover {

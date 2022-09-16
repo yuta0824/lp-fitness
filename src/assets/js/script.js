@@ -97,7 +97,7 @@ jQuery(".js-btn-drawer").click(function () {
 	jQuery("html").toggleClass("is-fixed");
 });
 jQuery(".js-contents-drawer li a").click(function () {
-	jQuery(".js-drawer-button").trigger("click");
+	jQuery(".js-btn-drawer").trigger("click");
 });
 
 // フォーカスを移動をハンバーガーメニュー内に限定
