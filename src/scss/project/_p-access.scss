@@ -13,19 +13,19 @@
 }
 
 .p-access__info {
-	@include g.mq("md") {
-		width: 49%;
-	}
+  @include g.mq("md") {
+    width: 49%;
+  }
 }
 
 .p-access__map {
   margin-top: 40px;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+  width: calc(100% + #{g.$pd-sp * 2});
+  margin-left: -#{g.$pd-sp};
 
-	@include g.mq("md") {
-		margin-top: 0;
-		margin-left: auto;
-		width: calc(520 / 1060 * 100%);
-	}
+  @include g.mq("md") {
+    margin-top: 0;
+    margin-left: auto;
+    width: calc(520 / 1060 * 100%);
+  }
 }
