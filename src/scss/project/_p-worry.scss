@@ -36,11 +36,17 @@
 }
 
 .p-worry__list {
+  min-height: 35px;
+
+  @include g.mq("md") {
+    min-height: auto;
+  }
+
   &:not(:first-child) {
     margin-top: 11px;
 
-		@include g.mq("md") {
-			margin-top: 21px;
-		}
+    @include g.mq("md") {
+      margin-top: 21px;
+    }
   }
 }
