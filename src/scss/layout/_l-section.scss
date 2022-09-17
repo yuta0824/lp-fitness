@@ -4,7 +4,11 @@
   padding: 56px 0 56px;
 
   @include g.mq("md") {
-    padding: 95px 0 96px;
+    padding: 80px 0 80px;
+  }
+
+  @include g.mq("lg") {
+    padding: 95px 0 95px;
   }
 }
 
@@ -12,7 +16,11 @@
   padding: 40px 0 80px;
 
   @include g.mq("md") {
-    padding: 93px 0 91px;
+    padding: 80px 0 80px;
+  }
+
+  @include g.mq("lg") {
+    padding: 95px 0 95px;
   }
 }
 
@@ -23,7 +31,11 @@
   @include g.mq("md") {
     background: transparent url(../img/bg_worry_pc.jpg) no-repeat top right 30% /
       cover;
-    padding: 96px 0 96px;
+    padding: 80px 0 80px;
+  }
+
+  @include g.mq("lg") {
+    padding: 95px 0 95px;
   }
 }
 
@@ -45,12 +57,14 @@
     left: 0;
     z-index: -1;
     width: 100%;
-    background: transparent url(../img/bg_voice_sp.jpg) no-repeat center center / cover;
+    background: transparent url(../img/bg_voice_sp.jpg) no-repeat center center /
+      cover;
     height: calc(100% + #{g.vw(375, 32)});
     top: -#{g.vw(375, 32)};
 
     @include g.mq("md") {
-      background: transparent url(../img/bg_voice_pc.jpg) no-repeat center center / cover;
+      background: transparent url(../img/bg_voice_pc.jpg) no-repeat center
+        center / cover;
       height: calc(100% + #{g.vw(1440, 65)});
       top: -#{g.vw(1440, 65)};
     }
