@@ -59,18 +59,17 @@
 }
 
 .p-drawer__item {
-}
+  a {
+    padding: 16px 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    transition: color 0.3s;
 
-.p-drawer__itemLink {
-  padding: 16px 0;
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-  transition: color 0.3s;
-
-  @include g.mq("hover") {
-    &:hover {
-      color: g.$cr-m;
+    @include g.mq("hover") {
+      &:hover {
+        color: g.$cr-m;
+      }
     }
   }
 }

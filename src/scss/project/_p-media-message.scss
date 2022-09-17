@@ -1,6 +1,6 @@
 @use '../global' as g;
 
-.p-mediaMessage {
+.p-media-message {
   @include g.mq("md") {
     display: flex;
     flex-direction: row-reverse;
@@ -8,21 +8,21 @@
   }
 }
 
-.p-mediaMessage--reverse {
+.p-media-message--reverse {
   @include g.mq("md") {
     flex-direction: row;
   }
 
-  .p-mediaMessage__img {
+  .p-media-message__img {
     margin-left: 0;
   }
 
-  .p-mediaMessage__body {
+  .p-media-message__body {
     margin-left: auto;
   }
 }
 
-.p-mediaMessage__img {
+.p-media-message__img {
   @include g.mq("md") {
     width: 42.6%;
     margin-left: auto;
@@ -32,7 +32,7 @@
   }
 }
 
-.p-mediaMessage__body {
+.p-media-message__body {
   @include g.mq("md") {
     width: 48%;
 		margin-top: 0;
@@ -40,7 +40,7 @@
   margin-top: 22px;
 }
 
-.p-mediaMessage__head {
+.p-media-message__head {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -50,7 +50,7 @@
   }
 }
 
-.p-mediaMessage__textWrap {
+.p-media-message__textWrap {
   margin-top: 11px;
 
 	@include g.mq("md") {
@@ -58,14 +58,14 @@
 	}
 }
 
-.p-mediaMessage__text {
+.p-media-message__text {
   letter-spacing: 0.03em;
 	@include g.mq("md") {
 		line-height:2;
 	}
 }
 
-.p-mediaMessage__name {
+.p-media-message__name {
   margin-top: 8px;
   font-size: 14px;
   letter-spacing: 0.05em;
