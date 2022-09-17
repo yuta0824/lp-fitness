@@ -28,13 +28,11 @@
 				<a class="c-logo-header" href="/"><img src="./assets/img/logo.png" alt="MELIA FITNESS"></a>
 			</h1>
 			<nav class="l-header__right">
-				<div class="l-header__gnav-right">
-					<ul class="p-nav-global">
-						<li class="p-nav-global__item"><a href="#price">PRICE</a></li>
-						<li class="p-nav-global__item"><a href="#faq">Q&A</a></li>
-						<li class="p-nav-global__item"><a href="#access">ACCESS</a></li>
-					</ul>
-				</div>
+				<ul class="l-header__right-gnav p-nav-global">
+					<li class="p-nav-global__item"><a href="#price">PRICE</a></li>
+					<li class="p-nav-global__item"><a href="#faq">Q&A</a></li>
+					<li class="p-nav-global__item"><a href="#access">ACCESS</a></li>
+				</ul>
 				<div class="l-header__btnWrap">
 					<a href="https://linecorp.com/ja/" target="blank" class="c-btn-line"><span>LINE予約</span></a>
 					<button class="l-header__hamburger c-btn-hamburger js-btn-drawer" id="buttonTitle" title="btn-hamburger">
@@ -52,13 +50,13 @@
 		<div class="p-drawer__bg"></div>
 		<div class="p-drawer__contents js-contents-drawer">
 			<ul class="p-drawer__items">
-				<li class="p-drawer__item"><a href="/" class="p-drawer__itemLink js-drawer-link">TOP</a></li>
-				<li class="p-drawer__item"><a href="#profile" class="p-drawer__itemLink js-drawer-link">OWNER’S PROFILE</a></li>
-				<li class="p-drawer__item"><a href="#feature" class="p-drawer__itemLink js-drawer-link">FEATURE</a></li>
-				<li class="p-drawer__item"><a href="#voice" class="p-drawer__itemLink js-drawer-link">MEMBER’S VOICE</a></li>
-				<li class="p-drawer__item"><a href="#price" class="p-drawer__itemLink js-drawer-link">PRICE</a></li>
-				<li class="p-drawer__item"><a href="#faq" class="p-drawer__itemLink js-drawer-link">Q&A</a></li>
-				<li class="p-drawer__item"><a href="#access" class="p-drawer__itemLink js-drawer-link">ACCESS</a></li>
+				<li class="p-drawer__item"><a href="/">TOP</a></li>
+				<li class="p-drawer__item"><a href="#profile">OWNER’S PROFILE</a></li>
+				<li class="p-drawer__item"><a href="#feature">FEATURE</a></li>
+				<li class="p-drawer__item"><a href="#voice">MEMBER’S VOICE</a></li>
+				<li class="p-drawer__item"><a href="#price">PRICE</a></li>
+				<li class="p-drawer__item"><a href="#faq">Q&A</a></li>
+				<li class="p-drawer__item"><a href="#access">ACCESS</a></li>
 			</ul>
 			<div class="p-drawer__sns p-items-sns">
 				<a href="https://www.youtube.com/" target="blank" class="p-items-sns__icon c-icon-sns"><img src="./assets/img/icon-youtube.png" alt="youtube" width="38" height="38" loading="lazy"></a>
@@ -398,12 +396,11 @@
 	</section>
 	<!-- p-faq -->
 
-	<div class="l-bg-gym">
-		<picture class="">
-			<source media="(min-width: 768px)" srcset="./assets/img/img_gym_pc.jpg">
-			<img src="./assets/img/img_gym_sp.jpg" alt="ジム内の風景" width="375" height="225" loading="lazy">
-		</picture>
-	</div>
+	<picture class="l-bg-gym">
+		<source media="(min-width: 768px)" srcset="./assets/img/img_gym_pc.jpg">
+		<img src="./assets/img/img_gym_sp.jpg" alt="ジム内の風景" width="375" height="225" loading="lazy">
+	</picture>
+	<!-- l-bg-gym -->
 
 	<section id="access" class="l-section p-access">
 		<div class="l-inner">
@@ -413,10 +410,8 @@
 			</div>
 			<div class="p-access__wrap">
 				<div class="p-access__info p-info">
-					<div class="p-info__name">
-						<p class="p-info__name-en">MELIA FITNESS</p>
-						<p class="p-info__name-ja"><span class="u-inline-block">パーソナルトレーニングジム </span><span class="u-inline-block">メリアフィットネス</span></p>
-					</div>
+					<p class="p-info__name-en">MELIA FITNESS</p>
+					<p class="p-info__name-ja"><span class="u-inline-block">パーソナルトレーニングジム </span><span class="u-inline-block">メリアフィットネス</span></p>
 					<div class="p-info__addressWrap">
 						<p class="p-info__address-number">〒170-6045</p>
 						<p class="p-info__address"><span class="u-inline-block">東京都豊島区東池袋3-1-1 </span><span class="u-inline-block">サンシャイン60 45階</span></p>
