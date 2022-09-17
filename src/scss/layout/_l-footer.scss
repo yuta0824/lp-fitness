@@ -6,6 +6,10 @@
   color: g.$cr-txt;
 
   @include g.mq("md") {
+    padding: 40px 0 35px;
+  }
+
+  @include g.mq("lg") {
     padding: 48px 0 40px;
   }
 }
