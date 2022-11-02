@@ -1,0 +1,55 @@
+@use "../global" as g;
+
+.u-anm-filter {
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 101%;
+		height: 100%;
+		background: rgba($color: g.$cr-bg, $alpha: 0.9);
+		transition: width 2s ease-out;
+		transition-delay: 0.1s;
+	}
+
+	&.is-animated {
+		&::after {
+			width: 0;
+		}
+	}
+}
+
+// オプション
+//---------------------
+@for $i from 0 through 50 {
+	.u-anm-filter--speed#{$i*100}ms {
+		&::after {
+			transition-duration: #{$i * 0.1}s !important;
+		}
+	}
+
+	.u-anm-filter--delay#{$i*100}ms {
+		&::after {
+			transition-delay: #{$i * 0.1}s !important;
+		}
+	}
+}
+
+.u-anm-filter--color-red {
+	&::after {
+		background: red;
+	}
+}
+.u-anm-filter--color-black {
+	&::after {
+		background: black;
+	}
+}
+.u-anm-filter--color-white {
+	&::after {
+		background: white;
+	}
+}

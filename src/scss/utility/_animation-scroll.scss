@@ -1,0 +1,100 @@
+@use "../global" as g;
+// アニメーションの定義
+//--------------------------
+//フェード
+.u-anm-fade {
+	opacity: 0;
+	transition: opacity 1s;
+	transition-delay: 0.1s;
+
+	&.is-animated {
+		opacity: 1;
+	}
+}
+
+//フェードアップ
+.u-anm-up {
+	opacity: 0;
+	transform: translateY(40px);
+	transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+	transition-delay: 0.1s;
+
+	&.is-animated {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	@include g.mq("md") {
+		transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+		transform: translateY(60px);
+	}
+}
+
+//フェードレフト
+.u-anm-left {
+	opacity: 0;
+	transform: translateX(40px);
+	transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+	transition-delay: 0.1s;
+
+	&.is-animated {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	@include g.mq("md") {
+		transform: translateX(60px);
+		transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+	}
+}
+
+//フェードライト
+.u-anm-right {
+	opacity: 0;
+	transform: translateX(-40px);
+	transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+	transition-delay: 0.1s;
+
+	@include g.mq("md") {
+		transform: translateX(-60px);
+		transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+	}
+
+	&.is-animated {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+//フェードアップリスト
+.u-anm-list > * {
+	opacity: 0;
+	transform: translateY(40px);
+	transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+
+	@include g.mq("md") {
+		transform: translateY(60px);
+		transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+	}
+
+	&.is-animated {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+// オプション
+//---------------------
+@for $i from 0 through 50 {
+	.u-anm--speed#{$i*100}ms {
+		transition-duration: #{$i * 0.1}s !important;
+	}
+
+	.u-anm-list--speed#{$i*100}ms > * {
+		transition-duration: #{$i * 0.1}s !important;
+	}
+
+	.u-anm--delay#{$i*100}ms {
+		transition-delay: #{$i * 0.1}s !important;
+	}
+}
