@@ -20,9 +20,9 @@ jQuery(window).on("scroll", function () {
 
 	function switchViewport() {
 		const value =
-			window.outerWidth > 375 ?
-			"width=device-width,initial-scale=1" :
-			"width=375";
+			window.outerWidth > 375
+				? "width=device-width,initial-scale=1"
+				: "width=375";
 		if (viewport.getAttribute("content") !== value) {
 			viewport.setAttribute("content", value);
 		}
@@ -32,7 +32,7 @@ jQuery(window).on("scroll", function () {
 })();
 
 // スムーススクロール
-jQuery("a[href^=\"#\"]").click(function () {
+jQuery('a[href^="#"]').click(function () {
 	let header = jQuery(".js-header").innerHeight();
 	let speed = 300;
 	let id = jQuery(this).attr("href");
@@ -44,7 +44,8 @@ jQuery("a[href^=\"#\"]").click(function () {
 	if (0 > position) {
 		position = 0;
 	}
-	jQuery("html, body").animate({
+	jQuery("html, body").animate(
+		{
 			scrollTop: position,
 		},
 		speed
@@ -63,6 +64,46 @@ jQuery(".js-contents-drawer li a").click(function () {
 });
 
 // フォーカスを移動をハンバーガーメニュー内に限定
-jQuery('.js-focus-trap').focus(function () {
-	jQuery('.js-btn-drawer').focus();
+jQuery(".js-focus-trap").focus(function () {
+	jQuery(".js-btn-drawer").focus();
+});
+
+//スクロールアニメーション
+jQuery.fn.acs = function (options) {
+	const elements = this;
+	const defaults = {
+		screenPos: 1,
+		className: "is-animated",
+	};
+	const setting = jQuery.extend(defaults, options);
+	jQuery(window).on("load scroll", function () {
+		add_class_in_scrolling();
+	});
+
+	function add_class_in_scrolling() {
+		const winScroll = jQuery(window).scrollTop();
+		const winHeight = jQuery(window).height();
+		const scrollPos = winScroll + winHeight * setting.screenPos;
+
+		if (elements.offset().top < scrollPos) {
+			elements.addClass(setting.className);
+		}
+	}
+};
+jQuery('[class*="u-anm-"], .u-anm-list > *').each(function () {
+	jQuery(this).acs();
+});
+jQuery.fn.anmDelay = function (options) {
+	const elements = this;
+	const defaults = {
+		delay: 0.2,
+		property: "transition-delay",
+	};
+	const setting = jQuery.extend(defaults, options);
+	const index = elements.index();
+	const time = index * setting.delay + 0.1;
+	elements.css(setting.property, time + "s");
+};
+jQuery(".u-anm-list > *").each(function () {
+	jQuery(this).anmDelay();
 });
